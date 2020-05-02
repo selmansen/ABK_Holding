@@ -43,12 +43,58 @@ header{
         transition:.4s;
     }
     .mainmenu{
-        a{
-            color:$gray;
-            padding:0px 20px;
-            transform: .4s;
-            &:hover, &.active{
-                color:$claret;
+        ul{
+            display: flex;
+            li{
+                position:relative;
+                padding:10px 20px 15px;
+                a{
+                    color:$gray;
+                    transition: .4s;
+                    &:hover, &.active{
+                        color:$claret;
+                    }
+                }
+                &:hover{
+                    >a{
+                        color:$claret;
+                    }
+                    >div{
+                        display: block;
+                        animation-name:fadeIn;
+                    }
+                }
+                >div{
+                    position: absolute;
+                    width: 150px;
+                    left: 20px;
+                    background:#2a323c;
+                    padding: 10px 0;
+                    top: 45px;
+                    display: none;
+                    animation-duration: .7s;
+                    animation-fill-mode: both;
+                    &:before{
+                        content:"";
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        width:8px;
+                        height:8px;
+                        top: -4px;
+                        left: 21px;
+                        transform: rotate(45deg);
+                        background: #2a323c;
+                    }
+                    a{
+                        color:#dadada;
+                        display: block;
+                        padding:5px 20px;
+                        &:hover, &.active{
+                            color:#fff;
+                        }
+                    }
+                }
             }
         }
     }
@@ -112,5 +158,48 @@ footer{
     }
     .footer-bottom{
         background: #1f2529;
+    }
+}
+
+.companies{
+    .banner{
+        background-size:cover !important;
+        height: 500px;
+        @media screen and(max-width:$screenmd){
+            height: auto;
+            min-height: 300px;
+            .container{
+                padding:50px 0px;
+                min-height: 300px;
+            }
+        }
+        h2{
+            font-size:50px;
+            line-height: 60px;
+            color:#fff;
+            @media screen and(max-width:$screenmd){
+                font-size:32px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
     }
 }

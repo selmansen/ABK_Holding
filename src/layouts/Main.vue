@@ -4,11 +4,18 @@
       <div class="container d-flex justify-content-between align-items-center">
         <a href="/"><img src="../assets/img/abk-logo.svg" alt="" class="logo"></a>
         <div class="mainmenu">
-          <a href="#homepage">Home</a>
-          <a href="#aboutus">About Us</a>
-          <a href="#socialAktivity">Social Activities</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
+          <ul>
+            <li><router-link to="/" tag="a" data-id="#homepage">Home</router-link></li>
+            <li><a href="javascript:;" data-id="#aboutus">About Us </a>
+              <div>
+                <a href="javascript:;" data-id="#about-companies">Sectors</a>
+                <a href="javascript:;" data-id="#about-companies">Companies</a>
+                <a href="javascript:;" data-id="#about-companies">Projects</a>
+              </div>
+            </li>
+            <li><a href="javascript:;" data-id="#news">Social Activities & News</a></li>
+            <li><a href="javascript:;" data-id="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -20,16 +27,17 @@
               <div class="col-lg-6 offset-lg-6">
                 <h2 class="bg-success text-white p-8">Work with us</h2>
                 <div class="form-wrap p-8 bg-white">
-                  <form action="" method="post">
+                  
+                  <form action="./send_email.php" method="post">
                     <div class="d-flex inputGroup flex-wrap">
                       <div>
-                        <input class="form-control" type="text" name="name" placeholder="Name Surname" required>
+                        <input class="form-control" type="name" name="name" placeholder="Name Surname" required>
                       </div>
                       <div class="ml-3">
                         <input class="form-control" type="email" name="email" placeholder="E-Mail" required>
                       </div>
                       <div class="mt-3">
-                        <input class="form-control" type="phone" name="phone" placeholder="Phone Number" required>
+                        <input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
                       </div>
                       <div class="mt-3 ml-3">
                         <input class="form-control" type="text" name="subject" placeholder="Subject" required>
@@ -64,33 +72,50 @@
   import '../assets/scss/main.scss';
   export default {
     mounted: function () {  
-      window.addEventListener('scroll', handleScroll);
-      window.addEventListener("DOMContentLoaded", scrollEvent );
+      window.addEventListener('scroll', function(){
+        handleScroll();
+      });
+      window.addEventListener("DOMContentLoaded", function(){
+        scrollEvent();
+      });
       function handleScroll () {
         let header = document.querySelector("header");
-        const menuItem = $(".mainmenu").children("a");
-        if( window.scrollY > 100 ){
+        const menuItem = $(".mainmenu").find("a");
+        if( window.scrollY > 50 ){
           header.classList.add("min");
-        }else if( window.scrollY === 0 ){
+        }else if( window.scrollY <= 49 ){
               menuItem.removeClass("active");
               header.classList.remove("min");
             }else{
           header.classList.remove("min");
+          menuItem.removeClass("active");
         }
       }
       function scrollEvent(){
         $(function(){
-          const menuItem = $(".mainmenu").children("a");
+          const menuItem = $(".mainmenu").find("a");
           menuItem.click(function(e){
-            const topVal = $(this).attr("href");
+            const topVal = $(this).attr("data-id");
             if( $(topVal).length === 1 ){
               menuItem.removeClass("active");
               $(this).addClass("active");
-              $("html, body").stop(true,false).animate({scrollTop: $(topVal).offset().top - 120}, 600);
+              $("html, body").stop(true,false).animate({scrollTop: $(topVal).offset().top - 95}, 600);
               e.preventDefault();
             }
           });
         });
+      }
+      function menuPosition(){
+        const menuItem = $(".mainmenu li").children("a");
+        menuItem.each(function() {
+          $(this).attr("data-top", $($(this).attr("data-id")).offset().top - 96 );
+          if ($(window).scrollTop() > $(this).attr("data-top") ){
+            menuItem.removeClass('active');
+            $(this).addClass('active');
+          }else if( window.scrollY === 0 ){
+            menuItem.removeClass('active');
+          }
+        }); 
       }
     }
   }
