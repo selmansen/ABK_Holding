@@ -36,6 +36,8 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <About></About>
     <div id="chart-table" class="pt-20 pb-12">
@@ -61,6 +63,10 @@
         pagination: {
           el: '.swiper-pagination',
           clickable:true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         autoplay: {
           delay: 5000,
@@ -122,6 +128,21 @@
       background:#a92807;
       width:10px;
       height:10px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+      color: #a92807;
+      width: 38px;
+      height: 60px;
+      margin-top:-30px;
+      &:after{
+        font-size:60px;
+      }
+    }
+    .swiper-button-prev{
+      left:15px;
+    }
+    .swiper-button-next{
+      right:15px;
     }
   }
   #chart-table{

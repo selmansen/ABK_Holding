@@ -1,5 +1,5 @@
 <template>
-    <div id="aboutus" class="py-20">
+    <div id="aboutus" class="pt-20 pb-12">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
