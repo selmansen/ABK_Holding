@@ -30,7 +30,7 @@
                         </li>
                         <li>FCA Licensed EMD Agent 
                             <ul>
-                            <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
+                            <li><router-view to="/Wamoio" tag="a">WAMO</router-view></li>
                             </ul>
                         </li>
                         </ul>
