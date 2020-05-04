@@ -2,7 +2,7 @@
     <div class="companies">
         <div class="banner bpprime">
             <div class="container h-100 d-flex align-items-center justify-content-center flex-column">
-                <a href="#" class="btn btn-success">Visit Web Site</a>
+                <a href="https://bpprime.com" target="_blank" class="btn btn-success">Visit Web Site</a>
             </div>
         </div>
         <div class="content py-lg-20 py-10">

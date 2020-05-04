@@ -87,7 +87,7 @@
                     </li>
                     <li>NON Financial
                         <ul>
-                        <li>Ikarus&Partners</li>
+                        <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
                         </ul>
                     </li>
                     </ul>
@@ -104,7 +104,7 @@
                     <ul>
                     <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
                     <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
-                    <li>ikaros & partners</li>
+                    <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
                     <li>ABK Payment Security LTD.</li>
                     <li>A&A Insurance</li>
                     <li>ABKTech</li>
@@ -224,7 +224,6 @@ export default {
             animation-fill-mode: both;
             >li{
                 padding:5px 5px 5px 25px;
-                cursor: pointer;
                 color:#fff;
                 transition:.4s;
                 position:relative;
@@ -244,7 +243,6 @@ export default {
                 >ul{
                 >li{
                     padding:5px 5px 5px 20px;
-                    cursor: pointer;
                     color:#fff;
                     transition:.4s;
                     position:relative;

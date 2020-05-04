@@ -6,6 +6,7 @@ import Bpprime from "./pages/Bpprime";
 import Wamoio from "./pages/Wamoio";
 import Icrypex from "./pages/Icrypex";
 import CrescoCapital from "./pages/CrescoCapital";
+import IkarosPartners from "./pages/IkarosPartners";
 
 import Detail from "./components/Detail";
 
@@ -17,6 +18,7 @@ const routes = [
     { path: "/Wamoio", component: Wamoio},
     { path: "/Icrypex", component: Icrypex},
     { path: "/CrescoCapital", component: CrescoCapital},
+    { path: "/IkarosPartners", component: IkarosPartners},
     { path: "/Detail/:Pid", component: Detail, name:'detail' },
     { path: "*", component: Home }
 ];
