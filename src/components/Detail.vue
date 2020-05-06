@@ -52,3 +52,9 @@ export default{
     }
 }
 </script>
+
+<style lang="scss" scoped>
+    .detail{
+        padding-top:165px;
+    }
+</style>

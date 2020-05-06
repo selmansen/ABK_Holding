@@ -2,10 +2,10 @@
   <div>
     <header class="py-5">
       <div class="container d-flex justify-content-between align-items-center">
-        <a href="/"><img src="../assets/img/abk-logo.svg" alt="" class="logo"></a>
+        <a href="/en/"><img src="../assets/img/abk-logo.svg" alt="" class="logo"></a>
         <div class="mainmenu">
           <ul>
-            <li><router-link to="/" tag="a" data-id="#homepage">Home</router-link></li>
+            <li><a href="/en/" tag="a" data-id="#homepage">Home</a></li>
             <li><a href="javascript:;" data-id="#aboutus">About Us </a>
               <div>
                 <a href="javascript:;" data-id="#about-companies">Sectors</a>
@@ -74,6 +74,7 @@
     mounted: function () {  
       window.addEventListener('scroll', function(){
         handleScroll();
+        menuPosition();
       });
       window.addEventListener("DOMContentLoaded", function(){
         scrollEvent();
@@ -83,12 +84,8 @@
         const menuItem = $(".mainmenu").find("a");
         if( window.scrollY > 50 ){
           header.classList.add("min");
-        }else if( window.scrollY <= 49 ){
-              menuItem.removeClass("active");
-              header.classList.remove("min");
-            }else{
+        }else{
           header.classList.remove("min");
-          menuItem.removeClass("active");
         }
       }
       function scrollEvent(){
@@ -99,7 +96,11 @@
             if( $(topVal).length === 1 ){
               menuItem.removeClass("active");
               $(this).addClass("active");
-              $("html, body").stop(true,false).animate({scrollTop: $(topVal).offset().top - 95}, 600);
+              window.scrollTo({
+                    top: $(topVal).offset().top - 95,
+                    left: 0,
+                    behavior: 'smooth'
+                });
               e.preventDefault();
             }
           });
@@ -108,12 +109,14 @@
       function menuPosition(){
         const menuItem = $(".mainmenu li").children("a");
         menuItem.each(function() {
-          $(this).attr("data-top", $($(this).attr("data-id")).offset().top - 96 );
-          if ($(window).scrollTop() > $(this).attr("data-top") ){
-            menuItem.removeClass('active');
-            $(this).addClass('active');
-          }else if( window.scrollY === 0 ){
-            menuItem.removeClass('active');
+          if ( $($(this).attr("data-id")).length > 0 ){
+            $(this).attr("data-top", $($(this).attr("data-id")).offset().top - 96 );
+            if ($(window).scrollTop() > $(this).attr("data-top") ){
+              menuItem.removeClass('active');
+              $(this).addClass('active');
+            }else if( window.scrollY === 0 ){
+              menuItem.removeClass('active');
+            }
           }
         }); 
       }

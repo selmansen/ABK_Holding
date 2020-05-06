@@ -2,33 +2,32 @@
 	<div id="homepage" class="home">
     <div class="swiper-container">
       <div class="swiper-wrapper">
+        <div class="swiper-slide slide4">
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-column">
+              <h2>Strenght that is formed with joined ventures & business partnerships</h2>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide slide1">
-          <div class="container h-100 d-flex align-items-center">
-            <div>
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>COVID-19: We are stronger together!</h2>
               <router-link to="/Detail/covid19-we-are-stronger" tag="a" class="btn btn-success mt-8">More Info</router-link>
             </div>
           </div>
         </div>
-        <div class="swiper-slide slide3">
-          <div class="container h-100 d-flex align-items-center">
-            <div>
-              <h2>Challenge on the Circuit!</h2>
-              <router-link to="/Detail/challenge-on-the-circuit" tag="a" class="btn btn-success mt-8">More Info</router-link>
-            </div>
-          </div>
-        </div>
         <div class="swiper-slide slide2">
-          <div class="container h-100 d-flex align-items-center">
-            <div>
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>Challenge on the road!</h2>
               <router-link to="/Detail/challenge-on-the-road" tag="a" class="btn btn-success mt-8">More Info</router-link>
             </div>
           </div>
         </div>
-        <div class="swiper-slide slide4">
-          <div class="container h-100 d-flex align-items-center">
-            <div>
+        <div class="swiper-slide slide3">
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>Icrypex and Wamo sponsors ADUS MOTORSPORTS Rally Team at Turkish Rally Championship!</h2>
               <router-link to="/Detail/icrypex-and-wamo-sponsors-adus" tag="a" class="btn btn-success mt-8">More Info</router-link>
             </div>
@@ -78,48 +77,59 @@
 
 <style lang="scss">
   .swiper-container{
-    height:calc(100vh - 165px);
+    height:100vh;
     min-height:667px;
+    max-height:900px;
     .swiper-slide{
       background-size:cover !important;
       background-position: center center !important;
+      position:relative;
+      z-index:1;
+      &:before{
+        content:"";
+        position:absolute;
+        left:0;
+        top:0;
+        background: url("../assets/img/patent.png") repeat rgba(#000, .1);
+        height:100%;
+        width:100%;
+        z-index:-1;
+      }
+      >.container{
+        padding-top:165px;
+      }
+      h2{
+        color:#fff;
+        text-shadow: 0px 2px 10px #000;
+        letter-spacing: -1px;
+        text-align: center;
+      }
       &.slide1{
         background:url("../assets/img/banner-1.jpg") no-repeat;
         h2{
           font-size: 55px;
-          letter-spacing: -1px;
           line-height: 50px;
-          color: #000;
-          text-shadow: 0px 2px 10px #fff;
         }
       }
       &.slide2{
         background:url("../assets/img/banner-2.jpg") no-repeat;
         h2{
           font-size: 60px;
-          letter-spacing: -1px;
           line-height: 60px;
-          color: #fff;
-          text-shadow: 0px 2px 10px #000;
         }
       }
       &.slide3{
-        background:url("../assets/img/banner-3.jpg") no-repeat;
+        background:url("../assets/img/banner-4.jpg") no-repeat;
         h2{
-          font-size: 60px;
-          letter-spacing: -1px;
-          line-height: 60px;
-          color: #fff;
-          text-shadow: 0px 2px 10px #000;
+          font-size:45px;
+          line-height: 55px;
         }
       }
       &.slide4{
-        background:url("../assets/img/banner-4.jpg") no-repeat;
+        background:url("../assets/img/banner-5.jpg") no-repeat;
         h2{
-          font-size:50px;
-          line-height: 60px;
-          color:#fff;
-          text-shadow:0px 2px 10px #000;
+          font-size:57px;
+          line-height: 70px;
         }
       }
       
@@ -147,5 +157,6 @@
   }
   #chart-table{
     background: url("../assets/img/chart-bg.jpg") no-repeat center top;
+    background-size:cover;
   }
 </style>

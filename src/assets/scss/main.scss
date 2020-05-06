@@ -10,7 +10,6 @@ $darkGray: #384657;
 body{
     font-size:18px;
     color:$gray;
-    padding-top:165px;
 }
 
 h2{
@@ -32,14 +31,15 @@ input:-webkit-autofill {
 }
 
 header{
-    background: #fff;
+    background: rgba(#fff, .7);
     position:fixed;
     top:0;
     width:100%;
     z-index: 99;
     box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.06);
+    transition:background .4s;
     .logo{
-        width:203px;
+        width:202px;
         transition:.4s;
     }
     .mainmenu{
@@ -49,7 +49,7 @@ header{
                 position:relative;
                 padding:10px 20px 15px;
                 a{
-                    color:$gray;
+                    color:#000;
                     transition: .4s;
                     &:hover, &.active{
                         color:$claret;
@@ -66,11 +66,11 @@ header{
                 }
                 >div{
                     position: absolute;
-                    width: 150px;
+                    width: 210px;
                     left: 20px;
                     background:#2a323c;
                     padding: 10px 0;
-                    top: 45px;
+                    top: 51px;
                     display: none;
                     animation-duration: .7s;
                     animation-fill-mode: both;
@@ -79,10 +79,10 @@ header{
                         position:absolute;
                         left:0;
                         top:0;
-                        width:8px;
-                        height:8px;
-                        top: -4px;
-                        left: 21px;
+                        width:16px;
+                        height:16px;
+                        top: -7px;
+                        left: 19px;
                         transform: rotate(45deg);
                         background: #2a323c;
                     }
@@ -99,6 +99,7 @@ header{
         }
     }
     &.min{
+        background: #fff;
         .logo{
             width:80px;
         }
@@ -162,6 +163,7 @@ footer{
 }
 
 .companies{
+    padding-top:165px;
     .banner{
         background-size:cover !important;
         height: 500px;
