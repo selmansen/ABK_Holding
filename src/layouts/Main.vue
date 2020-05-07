@@ -21,25 +21,25 @@
     </header>
       <router-view></router-view>
       <footer>
-        <div id="contact" class="py-20">
+        <div id="contact" class="py-lg-20 py-16">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 offset-lg-6">
-                <h2 class="bg-success text-white p-8">Work with us</h2>
-                <div class="form-wrap p-8 bg-white">
+              <div class="col-xl-6 col-lg-9 offset-xl-6 offset-lg-3">
+                <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
+                <div class="form-wrap p-lg-8 p-4 bg-white">
                   
                   <form action="./send_email.php" method="post">
                     <div class="d-flex inputGroup flex-wrap">
                       <div>
                         <input class="form-control" type="name" name="name" placeholder="Name Surname" required>
                       </div>
-                      <div class="ml-3">
+                      <div class="ml-md-3 mt-md-0 mt-3">
                         <input class="form-control" type="email" name="email" placeholder="E-Mail" required>
                       </div>
                       <div class="mt-3">
                         <input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
                       </div>
-                      <div class="mt-3 ml-3">
+                      <div class="ml-md-3 mt-3">
                         <input class="form-control" type="text" name="subject" placeholder="Subject" required>
                       </div>
                     </div>
@@ -50,16 +50,16 @@
             </div>
           </div>
         </div>
-        <div class="footer-social py-16 d-flex flex-column align-items-center">
+        <div class="footer-social py-lg-16 py-10 d-flex flex-column align-items-center">
           <img src="../assets/img/ft-abk-logo.svg" alt="" width="130">
-          <div class="social-media mt-10">
+          <div class="social-media mt-lg-10 mt-6">
             <a href="#" class="fc"></a>
             <a href="#" class="tw"></a>
             <a href="#" class="yt"></a>
             <a href="#" class="pt"></a>
           </div>
         </div>
-        <div class="footer-bottom py-5 text-center">
+        <div class="footer-bottom py-lg-5 py-3 text-center">
           <div class="container">
             <p>© 2020 ABK</p>
           </div>

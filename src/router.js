@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import VueMeta from 'vue-meta';
 
 import Home from "./pages/Home";
 import Bpprime from "./pages/Bpprime";
@@ -7,18 +8,21 @@ import Wamoio from "./pages/Wamoio";
 import Icrypex from "./pages/Icrypex";
 import CrescoCapital from "./pages/CrescoCapital";
 import IkarosPartners from "./pages/IkarosPartners";
+import AbkTech from "./pages/AbkTech";
 
 import Detail from "./components/Detail";
 
 Vue.use(VueRouter);
+Vue.use(VueMeta);
 
 const routes = [
-    { path: "/", component: Home },
+    { path: "/", component: Home, meta: { requiresAuth: true } },
     { path: "/Bpprime", component: Bpprime},
     { path: "/Wamoio", component: Wamoio},
     { path: "/Icrypex", component: Icrypex},
     { path: "/CrescoCapital", component: CrescoCapital},
     { path: "/IkarosPartners", component: IkarosPartners},
+    { path: "/AbkTech", component: AbkTech},
     { path: "/Detail/:Pid", component: Detail, name:'detail' },
     { path: "*", component: Home }
 ];

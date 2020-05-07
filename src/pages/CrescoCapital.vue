@@ -38,3 +38,15 @@
         }
     }
 </style>
+<script>
+    export default {
+        name: 'App',
+        metaInfo: {
+            title: 'ABK HOLDING',
+            titleTemplate: '%s | Cresco Capital',
+            meta: [
+            { name: 'description', content: 'Crescofx was founded in 2011. It was designed to serve professional traders the company grew through word-of-mouth and referrals through the clients and has reached out different operations in several locations.' },
+            ]
+        },
+    }
+</script>

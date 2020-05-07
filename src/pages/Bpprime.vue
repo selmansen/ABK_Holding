@@ -28,3 +28,15 @@
         background: url("../assets/img/BP-Prime.jpg") no-repeat center center;
     }
 </style>
+<script>
+    export default {
+        name: 'App',
+        metaInfo: {
+            title: 'ABK HOLDING',
+            titleTemplate: '%s | BP Prime',
+            meta: [
+            { name: 'description', content: 'BP Prime was founded in 2013 named Black Pearl Securities Ltd. It is an online trading FCA licensed entity. Its trademark is very well known amongst the market.' },
+            ]
+        },
+    }
+</script>

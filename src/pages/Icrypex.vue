@@ -43,3 +43,15 @@
         background: url("../assets/img/Icrypex.jpg") no-repeat center center;
     }
 </style>
+<script>
+    export default {
+        name: 'App',
+        metaInfo: {
+            title: 'ABK HOLDING',
+            titleTemplate: '%s | Icrypex',
+            meta: [
+            { name: 'description', content: 'Icrypex aims to bring the financial expertise in the blockchain community, including producing some exotic products like crypto-options, crypto-derivatives and crypto-swaps of which had not been tested by any other crypto-exchange in Turkey before.' },
+            ]
+        },
+    }
+</script>

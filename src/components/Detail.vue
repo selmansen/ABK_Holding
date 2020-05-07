@@ -5,7 +5,7 @@
 				<div class="col-md-12" v-for="(news,index) in newss" :key="index"> 
 					<div v-if="proId == news.newsId">
                         <img :src="news.image" class="img-fluid">
-						<h1 class="mt-10 text-secondary">{{news.newsTitle}}</h1>
+						<h1 class="mt-lg-10 mt-6 text-secondary">{{news.newsTitle}}</h1>
                         <div class="mt-3" v-html="news.newsContent"></div>
 					</div>
 				</div>
@@ -56,5 +56,8 @@ export default{
 <style lang="scss" scoped>
     .detail{
         padding-top:165px;
+        @media screen and(max-width:991px){
+            padding-top:102px;
+        }
     }
 </style>

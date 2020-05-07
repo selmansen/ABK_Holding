@@ -36,3 +36,15 @@
         background: url("../assets/img/Wamoio.jpg") no-repeat center center;
     }
 </style>
+<script>
+    export default {
+        name: 'App',
+        metaInfo: {
+            title: 'ABK HOLDING',
+            titleTemplate: '%s | Wamo',
+            meta: [
+            { name: 'description', content: 'Wamo is a remittance service provider which solves P2P fiat-to-crypto, crypto-to-crypto and fiat-to-fiat money transfer problem in one single application. Wamo offers to transfer your money instantly or recurringly in lowest fees.' },
+            ]
+        },
+    }
+</script>

@@ -1,17 +1,18 @@
 <template>
-    <div id="news" class="news py-20">
+    <div id="news" class="news py-lg-20 pt-16 pb-10">
         <div class="container">
-            <h3 class="mb-16 text-white text-center">Social Activities & News</h3>
+            <h3 class="mb-lg-16 mb-10 text-white text-center">Social Activities & News</h3>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                     <div class="first-new" v-for="(data,index) in firstnews" :key="index">
                         <router-link :to="'/Detail/'+ data.firstNewsId" tag="a"><img :src="data.firstImage" class="img-fluid"></router-link>
                         <span class="date mt-4 text-secondary">{{data.firstNewsDate}}</span>
                         <h4 class="mt-2 font-weight-normal"><router-link :to="'/Detail/'+ data.firstNewsId" tag="a" class="text-secondary">{{data.firstNewsTitle}}</router-link></h4>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="other-news p-3">
+                <div class="col-xl-6">
+                    <hr class="d-xl-none my-10">
+                    <div class="other-news p-xl-3 p-1">
                         <div class="mask p-3">
                             <div class="list d-flex mt-4 border-top pt-4 align-items-start" v-for="(data,index) in news" :key="index">
                                 <router-link :to="'/Detail/'+ data.newsId" tag="a"><img :src="data.image"></router-link>
@@ -88,6 +89,9 @@ export default {
             top:0;
             left:0;
             z-index:-1;
+            @media screen and(max-width:1231px){
+                height: calc(50% - 225px);
+            }
         }
         .first-new{
             img{
@@ -102,6 +106,10 @@ export default {
             background: #f2f5f7;
             height: 100%;
             max-height: 341px;
+            @media screen and(max-width:1231px){
+                max-height: none;
+                height: auto;
+            }
             .mask{
                 height: 100%;
                 overflow-x:auto;

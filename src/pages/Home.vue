@@ -13,7 +13,7 @@
           <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>COVID-19: We are stronger together!</h2>
-              <router-link to="/Detail/covid19-we-are-stronger" tag="a" class="btn btn-success mt-8">More Info</router-link>
+              <router-link to="/Detail/covid19-we-are-stronger" tag="a" class="btn btn-success mt-lg-8 mt-4">More Info</router-link>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>Challenge on the road!</h2>
-              <router-link to="/Detail/challenge-on-the-road" tag="a" class="btn btn-success mt-8">More Info</router-link>
+              <router-link to="/Detail/challenge-on-the-road" tag="a" class="btn btn-success mt-lg-8 mt-4">More Info</router-link>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
           <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <h2>Icrypex and Wamo sponsors ADUS MOTORSPORTS Rally Team at Turkish Rally Championship!</h2>
-              <router-link to="/Detail/icrypex-and-wamo-sponsors-adus" tag="a" class="btn btn-success mt-8">More Info</router-link>
+              <router-link to="/Detail/icrypex-and-wamo-sponsors-adus" tag="a" class="btn btn-success mt-lg-8 mt-4">More Info</router-link>
             </div>
           </div>
         </div>
@@ -80,6 +80,10 @@
     height:100vh;
     min-height:667px;
     max-height:900px;
+    @media screen and(max-width:991px){
+      height: 567px;
+      min-height: 567px;
+    }
     .swiper-slide{
       background-size:cover !important;
       background-position: center center !important;
@@ -103,6 +107,10 @@
         text-shadow: 0px 2px 10px #000;
         letter-spacing: -1px;
         text-align: center;
+        @media screen and(max-width:991px){
+          font-size: 34px !important;
+          line-height: 42px !important;
+        }
       }
       &.slide1{
         background:url("../assets/img/banner-1.jpg") no-repeat;

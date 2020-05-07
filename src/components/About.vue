@@ -1,17 +1,17 @@
 <template>
-    <div id="aboutus" class="pt-20 pb-12">
+    <div id="aboutus" class="pt-lg-20 pt-10 pb-lg-12 pb-10">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <h2>About Us</h2>
             <h3>Strenght that is formed with joined ventures & business partnerships</h3>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-lg-0 mt-6">
             <p>ABK Holding was transformed into a Financial Holding as of September 2017 to handle the already running financial businesses, including fx trading, crypto exchange, service providing in FX and some PSPs, in different jurisdictions of the world. ABK promises to deliver the fast, low-cost, trusted trading services, money transfer mechanisms and crypto exchanges under the one and only group structure.</p>
             <p class="mt-3">The Group takes the Markets in Financial Instruments Directive (MiFID II) as benchmark no matter its brokerage subsidiaries are licensed in the continental Europe to provide the investment services of agency only execution (i.e. reception and transmission of orders, execution of orders on behalf of clients), portfolio management and investment advice in relation to transferable securities, options, futures, swaps, forward rate agreements, financial contracts for difference (CFD) and other derivatives. ABK Group Brokerage companies are licensed to provide the ancillary service of safekeeping and administration of financial instruments. ABK overseas entities are licensed to carry on the business of dealing in securities, execution of orders on behalf of the clients and portfolio management.</p>
           </div>
         </div>
-        <div id="about-companies" class="about-accordion mt-16">
+        <div id="about-companies" class="about-accordion mt-lg-16 mt-10">
             <div class="row">
             <div class="col-lg-4">
                 <div class="p-4 bg-success">
@@ -67,12 +67,12 @@
                         </li>
                         <li>FCA Regulated Asset Management
                             <ul>
-                            <li><router-link to="/CrescoCapital" tag="a">Cresco Capital</router-link></li>
+                            <li>ABK NV Management</li>
                             </ul>
                         </li>
                         <li>Technology Companies
                             <ul>
-                            <li>ABK Tech</li>
+                            <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
                             </ul>
                         </li>
                         <li>Insurance
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-lg-0 mt-3">
                 <div class="p-4 bg-success">
                     <div class="about-tab-title">
                         <img src="../assets/img/ic-companies.svg" alt="" class="tab-icon">
@@ -102,23 +102,24 @@
                     </div>
                     <div class="acList">
                         <ul>
+                        <li>ABK Payment Security LTD.</li>
                         <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
+                        <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
+                        <li>NYFX Prime</li>
+                        <li>NYFX Cambodia</li>
+                        <li>SkyFX Global</li>
+                        <li>NYFX Global</li>
+                        <li>TorosFX</li>
+                        <li>ABK NV Management</li>
+                        <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
+                        <li>A&A</li>
                         <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
                         <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
-                        <li>ABK Payment Security LTD.</li>
-                        <li>A&A Insurance</li>
-                        <li>ABKTech</li>
-                        <li>NYFX Prime</li>
-                        <li>NYFX Global</li>
-                        <li>NYFX Cambodia</li>
-                        <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
-                        <li>TorosFX</li>
-                        <li><router-link to="/CrescoCapital" tag="a">Cresco Capital</router-link></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-lg-0 mt-3">
                 <div class="p-4 bg-success">
                     <div class="about-tab-title">
                         <img src="../assets/img/ic-projects.svg" alt="" class="tab-icon">
@@ -148,7 +149,7 @@ export default {
                 $(".acList>ul>li").removeClass("open");
                 $(".acList").removeClass("open").height(0);
                 window.scrollTo({
-                    top: title.offset().top - 120,
+                    top: $(this).offset().top - 120,
                     left: 0,
                     behavior: 'smooth'
                 });

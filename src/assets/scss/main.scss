@@ -18,6 +18,10 @@ h2{
 }
 h3{
     color:$darkGray;
+    @media screen and(max-width:$screenmd){
+        font-size:42px;
+        line-height: 50px;
+    }
 }
 p{
     line-height: 22px;
@@ -41,6 +45,9 @@ header{
     .logo{
         width:202px;
         transition:.4s;
+        @media screen and(max-width:$screenmd){
+            width:80px;
+        }
     }
     .mainmenu{
         ul{
@@ -108,13 +115,15 @@ header{
 
 footer{
     #contact{
-        background: url($img+"footer-bg.jpg") no-repeat center center;
+        background: url($img+"footer-bg.jpg") no-repeat 26% center;
         background-size:cover;
         form{
             .inputGroup{
                 >div{
                     width:calc(50% - 7.5px);
-                    
+                    @media screen and(max-width:$screensm){
+                        width:100%;
+                    }
                 }
             }
         }
@@ -164,6 +173,9 @@ footer{
 
 .companies{
     padding-top:165px;
+    @media screen and(max-width:$screenmd){
+        padding-top:102px;
+    }
     .banner{
         background-size:cover !important;
         height: 500px;
