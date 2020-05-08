@@ -30,7 +30,7 @@
                                     <li>
                                         <a href="javascript:;" class="title-a">Singapore Licensed EMI</a>
                                         <ul>
-                                            <li><a href="">ABK Payment Services Ltd.</a></li>
+                                            <li><a href="">ABK Payment Services LTD.</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -53,7 +53,7 @@
                                     <li>
                                         <a href="javascript:;" class="title-a">Labuan Licence</a>
                                         <ul>
-                                            <li><a href="javascript:;">NYFX Prime</a></li>
+                                            <li><router-link to="/NyFxPrime" tag="a">NYFX Prime</router-link></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -65,8 +65,8 @@
                                     <li>
                                         <a href="javascript:;" class="title-a">St. Vincent License</a>
                                         <ul>
-                                            <li><a href="javascript:;">SkyFX Global</a></li>
-                                            <li><a href="javascript:;">NYFX Global</a></li>
+                                            <li><router-link to="/SkyFx" tag="a">SkyFX Global</router-link></li>
+                                            <li><router-link to="/NyFx" tag="a">NYFX Global</router-link></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -119,13 +119,13 @@
                     </div>
                     <div class="acList">
                         <ul>
-                            <li><a href="javascript:;">ABK Payment Security LTD.</a></li>
+                            <li><a href="javascript:;">ABK Payment Services LTD.</a></li>
                             <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
                             <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
-                            <li><a href="javascript:;">NYFX Prime</a></li>
+                            <li><router-link to="/NyFxPrime" tag="a">NYFX Prime</router-link></li>
                             <li><a href="javascript:;">NYFX Cambodia</a></li>
-                            <li><a href="javascript:;">SkyFX Global</a></li>
-                            <li><a href="javascript:;">NYFX Global</a></li>
+                            <li><router-link to="/SkyFx" tag="a">SkyFX Global</router-link></li>
+                            <li><router-link to="/NyFx" tag="a">NYFX Global</router-link></li>
                             <li><a href="javascript:;">TorosFX</a></li>
                             <li><a href="javascript:;">ABK NV Management</a></li>
                             <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>

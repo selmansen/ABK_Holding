@@ -11,6 +11,9 @@ import IkarosPartners from "./pages/IkarosPartners";
 import AbkTech from "./pages/AbkTech";
 import Legendingo from "./pages/Legendingo";
 import PlayOnFinance from "./pages/PlayOnFinance";
+import SkyFx from "./pages/SkyFx";
+import NyFx from "./pages/NyFx";
+import NyFxPrime from "./pages/NyFxPrime";
 
 import Detail from "./components/Detail";
 
@@ -27,6 +30,9 @@ const routes = [
     { path: "/AbkTech", component: AbkTech},
     { path: "/Legendingo", component: Legendingo},
     { path: "/PlayOnFinance", component: PlayOnFinance},
+    { path: "/SkyFx", component: SkyFx},
+    { path: "/NyFx", component: NyFx},
+    { path: "/NyFxPrime", component: NyFxPrime},
     { path: "/Detail/:Pid", component: Detail, name:'detail' },
     { path: "*", component: Home }
 ];

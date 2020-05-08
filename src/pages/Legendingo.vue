@@ -1,10 +1,6 @@
 <template>
     <div class="companies">
-        <div class="banner abktech">
-            <div class="container h-100 d-flex align-items-center justify-content-center flex-column">
-                <a href="#" class="btn btn-success">Visit Web Site</a>
-            </div>
-        </div>
+        <div class="banner abktech"></div>
         <div class="content py-lg-20 py-10">
             <div class="container">
                 <div class="row mx-lg-0">
