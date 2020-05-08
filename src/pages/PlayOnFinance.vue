@@ -6,7 +6,6 @@
                 <div class="row mx-lg-0">
                     <div class="col-lg-6 pl-lg-0 pr-lg-6">
                         <p>Play on Finance is a trading platform that gives traders the convinience of trading together on a open, transparent, user friendly and risk freee environment.</p>
-                        <p class="mt-3">As a Fintech company all structural need are in development process already. Targeted Ignition date is 2thQ of 2020.</p>
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
                         <img src="../assets/img/playonfinance-img1.jpg" alt="" class="w-100">

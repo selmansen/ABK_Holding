@@ -28,7 +28,7 @@
         <div class="swiper-slide slide3">
           <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center flex-column">
-              <h2>Icrypex and Wamo sponsors ADUS MOTORSPORTS Rally Team at Turkish Rally Championship!</h2>
+              <h2>Icrypex and Wamo to sponsor Adus Motorsports..</h2>
               <router-link to="/Detail/icrypex-and-wamo-sponsors-adus" tag="a" class="btn btn-success mt-lg-8 mt-4">More Info</router-link>
             </div>
           </div>

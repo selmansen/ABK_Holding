@@ -7,9 +7,9 @@ import Bpprime from "./pages/Bpprime";
 import Wamoio from "./pages/Wamoio";
 import Icrypex from "./pages/Icrypex";
 import CrescoCapital from "./pages/CrescoCapital";
-import IkarosPartners from "./pages/IkarosPartners";
+import Ikaros from "./pages/Ikaros";
 import AbkTech from "./pages/AbkTech";
-import Legendingo from "./pages/Legendingo";
+import Lendiglo from "./pages/Lendiglo";
 import PlayOnFinance from "./pages/PlayOnFinance";
 import SkyFx from "./pages/SkyFx";
 import NyFx from "./pages/NyFx";
@@ -26,9 +26,9 @@ const routes = [
     { path: "/Wamoio", component: Wamoio},
     { path: "/Icrypex", component: Icrypex},
     { path: "/CrescoCapital", component: CrescoCapital},
-    { path: "/IkarosPartners", component: IkarosPartners},
+    { path: "/Ikaros", component: Ikaros},
     { path: "/AbkTech", component: AbkTech},
-    { path: "/Legendingo", component: Legendingo},
+    { path: "/Lendiglo", component: Lendiglo},
     { path: "/PlayOnFinance", component: PlayOnFinance},
     { path: "/SkyFx", component: SkyFx},
     { path: "/NyFx", component: NyFx},

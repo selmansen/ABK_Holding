@@ -104,7 +104,7 @@
                             <li>
                                 <a href="javascript:;" class="title-a">NON Financial</a>
                                 <ul>
-                                    <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
+                                    <li><router-link to="/Ikaros" tag="a">Ikaros</router-link></li>
                                 </ul>
                             </li>
                         </ul>
@@ -131,7 +131,7 @@
                             <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
                             <li><a href="javascript:;">A&A</a></li>
                             <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
-                            <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
+                            <li><router-link to="/Ikaros" tag="a">Ikaros</router-link></li>
                         </ul>
                     </div>
                 </div>
