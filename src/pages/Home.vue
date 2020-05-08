@@ -101,6 +101,9 @@
       }
       >.container{
         padding-top:165px;
+        @media screen and(max-width:991px){
+          padding-top:102px;
+        }
       }
       h2{
         color:#fff;

@@ -9,6 +9,8 @@ import Icrypex from "./pages/Icrypex";
 import CrescoCapital from "./pages/CrescoCapital";
 import IkarosPartners from "./pages/IkarosPartners";
 import AbkTech from "./pages/AbkTech";
+import Legendingo from "./pages/Legendingo";
+import PlayOnFinance from "./pages/PlayOnFinance";
 
 import Detail from "./components/Detail";
 
@@ -23,6 +25,8 @@ const routes = [
     { path: "/CrescoCapital", component: CrescoCapital},
     { path: "/IkarosPartners", component: IkarosPartners},
     { path: "/AbkTech", component: AbkTech},
+    { path: "/Legendingo", component: Legendingo},
+    { path: "/PlayOnFinance", component: PlayOnFinance},
     { path: "/Detail/:Pid", component: Detail, name:'detail' },
     { path: "*", component: Home }
 ];

@@ -1,14 +1,17 @@
 <template>
     <div id="aboutus" class="pt-lg-20 pt-10 pb-lg-12 pb-10">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row text-center">
+          <div class="col-lg-12">
             <h2>About Us</h2>
-            <h3>Strenght that is formed with joined ventures & business partnerships</h3>
+            <h3 class="mt-3">Strenght that is formed with joined ventures & business partnerships</h3>
           </div>
-          <div class="col-lg-6 mt-lg-0 mt-6">
-            <p>ABK Holding was transformed into a Financial Holding as of September 2017 to handle the already running financial businesses, including fx trading, crypto exchange, service providing in FX and some PSPs, in different jurisdictions of the world. ABK promises to deliver the fast, low-cost, trusted trading services, money transfer mechanisms and crypto exchanges under the one and only group structure.</p>
-            <p class="mt-3">The Group takes the Markets in Financial Instruments Directive (MiFID II) as benchmark no matter its brokerage subsidiaries are licensed in the continental Europe to provide the investment services of agency only execution (i.e. reception and transmission of orders, execution of orders on behalf of clients), portfolio management and investment advice in relation to transferable securities, options, futures, swaps, forward rate agreements, financial contracts for difference (CFD) and other derivatives. ABK Group Brokerage companies are licensed to provide the ancillary service of safekeeping and administration of financial instruments. ABK overseas entities are licensed to carry on the business of dealing in securities, execution of orders on behalf of the clients and portfolio management.</p>
+          <div class="col-lg-12 mt-6">
+            <p>ABK was established in 1977 with the name “Ozyavuzgil Group” and changed its business name to ABK Holding A.Ş. in 2017. </p>
+            <p class="mt-3">ABK is a financial holding gathering its financial operations of CFDs and FX trading, Crypto Exchanges, Banking & FinTech, Insurance Brokerage, Asset Management operating in different jurisdictions and Technology company supporting the group’s financial institutional in terms of IT infrastructure, domain, trading platforms and so on.</p>
+            <p class="mt-3">As internet based service provider, ABK Group Brokerage Division provides on-line trading platforms from different locations through its licensed entities’ websites and various on-line advertising channels. With the stream live tradable prices clients can buy or sell at their own discretion, and get the support from multi-lingual staff. ABK services over 10,000 clients across the globe with a global workforce made up of local professionals across the markets in London, Istanbul, Ho Chi Min, and Phnom Penh with more offices to come. The Group is operating at the markets where shareholders have deep experience about the local dynamics.</p>
+            <p class="mt-3">The Group brokerage entities offer a full service to its retail clients and make them enabling to trade on margin. ABK is to keep the level of first-class reliable service to its Retail, Professional and Institutional clients, and enabling them to trade on margin over 500 products including Forex, CFDs, Commodities, Equities and Indices through the world prominent trading platforms Metatrader 4 and Metatrader 5 (Metaquotes®)</p>
+            <p class="mt-3">The Group accepts the Markets in Financial Instruments Directive (MiFID II) as benchmark no matter its brokerage subsidiaries are licensed in the continental Europe to provide the investment services of agency only execution (i.e. reception and transmission of orders, execution of orders on behalf of clients), portfolio management and investment advice in relation to transferable securities, options, futures, swaps, forward rate agreements, financial contracts for difference (CFD) and other derivatives. ABK Group Brokerage companies are licensed to provide the ancillary service of safekeeping and administration of financial instruments. ABK overseas entities are licensed to carry on the business of dealing in securities, execution of orders on behalf of the clients and portfolio management.</p>
           </div>
         </div>
         <div id="about-companies" class="about-accordion mt-lg-16 mt-10">
@@ -21,75 +24,89 @@
                     </div>
                     <div class="acList">
                         <ul>
-                        <li>Banking/Finance
-                            <ul>
-                            <li>Singapore Licensed EMI
+                            <li>
+                                <a href="javascript:;" class="title-a">Banking/Finance</a>
                                 <ul>
-                                <li>ABK Payment Services Ltd.</li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">Singapore Licensed EMI</a>
+                                        <ul>
+                                            <li><a href="">ABK Payment Services Ltd.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">FCA Licensed EMD Agent</a>
+                                        <ul>
+                                            <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>FCA Licensed EMD Agent 
+                            <li>
+                                <a href="javascript:;" class="title-a">Brokarege</a>
                                 <ul>
-                                <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">FCA Licence</a>
+                                        <ul>
+                                            <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">Labuan Licence</a>
+                                        <ul>
+                                            <li><a href="javascript:;">NYFX Prime</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">Cambodian License</a>
+                                        <ul>
+                                            <li><a href="javascript:;">NYFX Cambodia</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">St. Vincent License</a>
+                                        <ul>
+                                            <li><a href="javascript:;">SkyFX Global</a></li>
+                                            <li><a href="javascript:;">NYFX Global</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="title-a">Turkey</a>
+                                        <ul>
+                                            <li><a href="javascript:;">TorosFX</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            </ul>
-                        </li>
-                        <li>Brokarege
-                            <ul>
-                            <li>FCA Licence
+                            <li>
+                                <a href="javascript:;" class="title-a">FCA Regulated Asset Management</a>
                                 <ul>
-                                <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
+                                    <li><a href="javascript:;">ABK NV Management</a></li>
                                 </ul>
                             </li>
-                            <li>Labuan Licence
+                            <li>
+                                <a href="javascript:;" class="title-a">Technology Companies</a>
                                 <ul>
-                                <li>NYFX Prime</li>
+                                    <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
                                 </ul>
                             </li>
-                            <li>Cambodian License
+                            <li>
+                                <a href="javascript:;" class="title-a">Insurance</a>
                                 <ul>
-                                <li>NYFX Cambodia</li>
+                                    <li><a href="javascript:;">A&A</a></li>
                                 </ul>
                             </li>
-                            <li>St. Vincent License
+                            <li>
+                                <a href="javascript:;" class="title-a">Crypto</a>
                                 <ul>
-                                <li>SkyFX Global</li>
-                                <li>NYFX Global</li>
+                                    <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
                                 </ul>
                             </li>
-                            <li>Turkey
+                            <li>
+                                <a href="javascript:;" class="title-a">NON Financial</a>
                                 <ul>
-                                <li>TorosFX</li>
+                                    <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
                                 </ul>
                             </li>
-                            </ul>
-                        </li>
-                        <li>FCA Regulated Asset Management
-                            <ul>
-                            <li>ABK NV Management</li>
-                            </ul>
-                        </li>
-                        <li>Technology Companies
-                            <ul>
-                            <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
-                            </ul>
-                        </li>
-                        <li>Insurance
-                            <ul>
-                            <li>A&A</li>
-                            </ul>
-                        </li>
-                        <li>Crypto
-                            <ul>
-                            <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
-                            </ul>
-                        </li>
-                        <li>NON Financial
-                            <ul>
-                            <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
-                            </ul>
-                        </li>
                         </ul>
                     </div>
                 </div>
@@ -102,19 +119,19 @@
                     </div>
                     <div class="acList">
                         <ul>
-                        <li>ABK Payment Security LTD.</li>
-                        <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
-                        <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
-                        <li>NYFX Prime</li>
-                        <li>NYFX Cambodia</li>
-                        <li>SkyFX Global</li>
-                        <li>NYFX Global</li>
-                        <li>TorosFX</li>
-                        <li>ABK NV Management</li>
-                        <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
-                        <li>A&A</li>
-                        <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
-                        <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
+                            <li><a href="javascript:;">ABK Payment Security LTD.</a></li>
+                            <li><router-link to="/Wamoio" tag="a">WAMO</router-link></li>
+                            <li><router-link to="/Bpprime" tag="a">BP Prime</router-link></li>
+                            <li><a href="javascript:;">NYFX Prime</a></li>
+                            <li><a href="javascript:;">NYFX Cambodia</a></li>
+                            <li><a href="javascript:;">SkyFX Global</a></li>
+                            <li><a href="javascript:;">NYFX Global</a></li>
+                            <li><a href="javascript:;">TorosFX</a></li>
+                            <li><a href="javascript:;">ABK NV Management</a></li>
+                            <li><router-link to="/AbkTech" tag="a">ABKTech</router-link></li>
+                            <li><a href="javascript:;">A&A</a></li>
+                            <li><router-link to="/Icrypex" tag="a">Icrypex</router-link></li>
+                            <li><router-link to="/IkarosPartners" tag="a">Ikarus&Partners</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -127,7 +144,8 @@
                     </div>
                     <div class="acList">
                         <ul>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</li>
+                        <li><router-link to="/PlayOnFinance" tag="a">Play On Finance</router-link></li>
+                        <li><router-link to="/Legendingo" tag="a">Legendingo</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -164,14 +182,16 @@ export default {
                 title.removeClass("active");
             }
         });
-        $(".acList>ul>li").on("click", function(){
-            if ( $(this).children("ul").is(":hidden") ){
-                $(".acList>ul>li").removeClass("open");
-                $(this).addClass("open");
+        $(".title-a").on("click", function(e){
+            if (e.target.nextElementSibling.className === "open"){
+                e.target.nextElementSibling.classList.remove("open");
+                e.target.classList.remove("active");
                 $(this).parents(".acList").height(  $(this).parents(".acList").children("ul").outerHeight() );
             }else{
-            $(this).removeClass("open");
-            $(this).parents(".acList").height(  $(this).parents(".acList").children("ul").outerHeight() );
+                $(this).parent().parent().find(".open").removeClass("open").prev("a").removeClass("active");
+                e.target.classList.add("active");
+                e.target.nextElementSibling.classList.add("open");
+                $(this).parents(".acList").height(  $(this).parents(".acList").children("ul").outerHeight() );
             }
         });
     }
@@ -217,6 +237,7 @@ export default {
             }
             h2{
                 margin-top:5px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -227,63 +248,31 @@ export default {
         transition:height .7s;
         >ul{
             >li{
-                padding:10px 10px 10px 25px;
-                position: relative;
                 border-bottom: 1px solid #fff;
                 font-size: 16px;
                 line-height: 20px;
                 transition:.4s;
                 cursor: pointer;
                 color:#fff;
-                &:before{
-                    content:"";
-                    width:10px;
-                    height:10px;
-                    border-top:2px solid #fff;
-                    border-right:2px solid #fff;
-                    transform:rotate(45deg);
-                    position:absolute;
-                    left:0;
-                    top:14px;
-                    transition:.4s;
-                }
                 &:last-child{
                     border-bottom:0;
                     padding-bottom:0;
                 }
-                &.open{
-                    color:#fff;
-                    &:before{
-                        transform: rotate(135deg);
-                        top:12px;
-                    }
-                    ul{
-                        display: block;
-                        animation-name: fadeIn;
-                    }
-                }
-                a{
+                >a{
+                    padding:10px 10px 10px 0px;
                     color:#fff;
                     transition:.4s;
+                    display: block;
+                    position: relative;
                     &:hover{
                         color:#c1c0c0;
                     }
-                }
-                >ul{
-                    margin-top:5px;
-                    display: none;
-                    animation-duration: .7s;
-                    animation-fill-mode: both;
-                    >li{
-                        padding:5px 5px 5px 25px;
-                        color:#fff;
-                        transition:.4s;
-                        position:relative;
-                        border-bottom: 1px solid rgba(#fff, .3);
+                    &.title-a{
+                        padding-left:25px;
                         &:before{
                             content:"";
-                            width:7px;
-                            height:7px;
+                            width:10px;
+                            height:10px;
                             border-top:2px solid #fff;
                             border-right:2px solid #fff;
                             transform:rotate(45deg);
@@ -292,22 +281,84 @@ export default {
                             top:14px;
                             transition:.4s;
                         }
-                        >ul{
-                            >li{
-                                padding:5px 5px 5px 20px;
-                                color:#fff;
-                                transition:.4s;
-                                position:relative;
+                    }
+                    &.active{
+                        color:#fff;
+                        &:before{
+                            transform: rotate(135deg);
+                            top:12px;
+                        }
+                    }
+                }
+                >ul{
+                    margin-bottom:5px;
+                    display: none;
+                    animation-duration: .7s;
+                    animation-fill-mode: both;
+                    padding:0 10px 0 25px;
+                    &.open{
+                        display: block;
+                        animation-name: fadeIn;
+                    }
+                    >li{
+                        color:#fff;
+                        position:relative;
+                        border-bottom: 1px solid rgba(#fff, .3);
+                        padding-bottom:5px;
+                        margin-bottom:5px;
+                        >a{
+                            color:#fff;
+                            transition:.4s;
+                            padding:5px 5px 5px 10px;
+                            display: block;
+                            &.title-a{
+                                padding-left:20px;
                                 &:before{
                                     content:"";
                                     width:7px;
-                                    height:2px;
-                                    background: #fff;
+                                    height:7px;
+                                    border-top:2px solid #fff;
+                                    border-right:2px solid #fff;
+                                    transform:rotate(45deg);
                                     position:absolute;
-                                    left:7px;
-                                    top:14px;
+                                    left:0;
+                                    top:11px;
                                     transition:.4s;
                                 }
+                            }
+                            &:hover{
+                                color:#c1c0c0;
+                            }
+                            &.active{
+                                color:#fff;
+                                &:before{
+                                    transform: rotate(135deg);
+                                    top:9px;
+                                }
+                            }
+                        }
+                        >ul{
+                            display: none;
+                            animation-duration: .7s;
+                            animation-fill-mode: both;
+                            padding:0 5px 0 25px;
+                            >li{
+                                color:#fff;
+                                transition:.4s;
+                                position:relative;
+                                a{
+                                    padding:5px 5px 5px 15px;
+                                    display: block;
+                                    color:#fff;
+                                    transition:.4s;
+                                    &:hover{
+                                        color:#c1c0c0;
+                                    }
+                                }
+                            }
+                            &.open{
+                                display: block;
+                                animation-name: fadeIn;
                             }
                         }
                         &:last-child{

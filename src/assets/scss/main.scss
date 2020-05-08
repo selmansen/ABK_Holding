@@ -46,18 +46,36 @@ header{
         width:202px;
         transition:.4s;
         @media screen and(max-width:$screenmd){
-            width:80px;
+            width:87.7px;
         }
     }
     .mainmenu{
+        @media screen and(max-width:$screenmd){
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition:height .4s;
+            &.opened{
+                height: 194px;
+            }
+        }
         ul{
             display: flex;
+            @media screen and(max-width:$screenmd){
+                display: block;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 20px;
+                margin-top: 25px;
+            }
             li{
                 position:relative;
-                padding:10px 20px 15px;
+                padding:8px 20px 15px;
+                @media screen and(max-width:$screenmd){
+                    padding:5px;
+                }
                 a{
                     color:#000;
-                    transition: .4s;
+                    transition:color .4s;
                     &:hover, &.active{
                         color:$claret;
                     }
@@ -69,6 +87,9 @@ header{
                     >div{
                         display: block;
                         animation-name:fadeIn;
+                        @media screen and(max-width:$screenmd){
+                            display: none;
+                        }
                     }
                 }
                 >div{
@@ -105,10 +126,59 @@ header{
             }
         }
     }
+    .hamb-menu{
+        width:45px;
+        height: 24px;
+        display:block;
+        position:relative;
+        border-top:2px solid $claret;
+        cursor: pointer;
+        transition:border-color .4s;
+        &:before, &:after{
+            content:"";
+            width:45px;
+            height:2px;
+            position:absolute;
+            top:0;
+            left:0;
+            background: $claret;
+            transition:.4s;
+        }
+        &:before{
+            top:10px;
+        }
+        &:after{
+            top:20px;
+        }
+        &:hover{
+            &:before{
+              width:34px;  
+            }
+            &:after{
+                width:41px;
+            }
+        }
+        &.opened{
+            width:40px;
+            border-color: transparent;
+            &:before{
+                transform: rotate(-135deg);
+                width:40px;
+            }
+            &::after{
+                transform: rotate(135deg);
+                width:40px;
+                top:10px;
+            }
+        }
+    }
     &.min{
         background: #fff;
         .logo{
             width:80px;
+            @media screen and(max-width:$screenmd){
+                width:87.7px;
+            }
         }
     }
 }

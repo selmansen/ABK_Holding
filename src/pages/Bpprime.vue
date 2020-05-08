@@ -7,17 +7,38 @@
         </div>
         <div class="content py-lg-20 py-10">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>BP Prime was founded in 2013 named Black Pearl Securities Ltd. It is an online trading FCA licensed entity. Its trademark is very well known amongst the market. BP Prime is known in the global market throughout creating world-leading experience and it has created a world wide trust not only amongst the retail clients but also in B2B market bringing a competitive advantage in pricing with its LPs. BP Prime is headquartered in London, with operational offices in Italy and China.
-                        <p class="mt-3">Existing in China is a great opportunity to onboard leading Introducing Brokers (IB) some of which are as big as Market leading Brokerage entities. UBOs of the ABK Holding are possessing +2000 IBs’ contact details and local professionals who have close relations with them. Abovementioned IBs did generate 40million USD “Net” deposit</p>
-                        <p class="mt-3">On top of above, Turkish institutional clients who generates 100 Billion USD levered notional volume equivalent 25million “Net” deposit are waiting to be onboarded to this new set-up.</p>
+                <div class="row mx-lg-0">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pr-lg-6 pl-lg-0">
+                        <p>The BP Prime is one of trading name of the Black Pearl Securities Ltd. incorporated in London, the UK in 2013. It is a fully licensed brokerage company regulated by the world’s respected Financial Conduct Authority (FCA, UK) an independent authority providing the confidence of security to the clients, while ensuring full compliance with the financial service operational guidelines and constantly overseen business. The standard requirement by FCA includes strict capital adequacy compliance, approved procedures of risk management, accounting and audits, along with honest and fair management of clients. </p>
                     </div>
-                    <div class="col-lg-6 mt-lg-0 mt-6">
-                        <img src="../assets/img/Bp2.jpg" alt="" class="w-100">
+                    <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
+                        <img src="../assets/img/BP1.jpg" alt="" class="w-100">
                     </div>
                 </div>
-                <img src="../assets/img/Bp1.jpg" alt="" class="mt-6 mx-auto d-block img-fluid">
+                <div class="row mx-lg-0 flex-lg-row flex-column-reverse mt-lg-0 mt-6">
+                    <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
+                        <img src="../assets/img/BP2.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pl-lg-6 pr-lg-0">
+                        <p>The financial security stands at a paramount priority of any regulated company, which is proved by regulatory audits. Thus, the risks taken on the BP Prime are measured by the authority, as well as funds are protected by the segregated, separate accounts within top-tier banks. Meaning BP Prime can never use the client’s money for its own good, besides the money always protected and covered by the UK’s Financial Services Compensation Scheme (FSCS).</p>
+                    </div>
+                </div>
+                <div class="row mx-lg-0 mt-lg-0 mt-6">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pr-lg-6 pl-lg-0">
+                        <p>BP Prime beside benefiting from the competitive advantage through ABK Group such as operational support from HQ in Istanbul and ABK Technology, also establishes close relations with other technology companies and liquidity providers in order to behave as an expert provider to retail, professional and B2B institutional clients, serving across the Europe, Asia and South America with additional operational offices in Italy and China.</p>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
+                        <img src="../assets/img/BP3.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="row mx-lg-0 flex-lg-row flex-column-reverse mt-lg-0 mt-6">
+                    <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
+                        <img src="../assets/img/BP4.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pl-lg-6 pr-lg-0 py-lg-6">
+                        <p>This model brings a competitive offering of a combination of the technology, tight pricing with market depth and the utmost level of customer service and allows improvement of the trading performance while keeping constant control over risk management. Moreover, the market-leading commissions and secure low latency execution were designed to satisfy the need of the elite trader tools with white label opportunities. The range of trading instruments BP Prime includes online trading services for Forex, Cryptocurrencies, CFDs and Commodities that are connected with market-leading aggregation, and CFDs available via FIX API, with negotiable and dependent on a volume prices for institutional clients.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

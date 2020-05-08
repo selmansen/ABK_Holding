@@ -1,20 +1,21 @@
 <template>
   <div>
-    <header class="py-5">
-      <div class="container d-flex justify-content-between align-items-center">
+    <header class="py-5" v-scroll="handleScroll">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
         <a href="/en/"><img src="../assets/img/abk-logo.svg" alt="" class="logo"></a>
-        <div class="mainmenu">
+        <span class="d-lg-none hamb-menu" @click="mobileMenu"></span>
+        <div class="mainmenu text-lg-left text-center">
           <ul>
-            <li><a href="/en/" tag="a" data-id="#homepage">Home</a></li>
-            <li><a href="javascript:;" data-id="#aboutus">About Us </a>
+            <li><a href="/en/">Home</a></li>
+            <li><a href="javascript:;" data-id="aboutus" v-on:click="moveTo">About Us </a>
               <div>
-                <a href="javascript:;" data-id="#about-companies">Sectors</a>
-                <a href="javascript:;" data-id="#about-companies">Companies</a>
-                <a href="javascript:;" data-id="#about-companies">Projects</a>
+                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Sectors</a>
+                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Companies</a>
+                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Projects</a>
               </div>
             </li>
-            <li><a href="javascript:;" data-id="#news">Social Activities & News</a></li>
-            <li><a href="javascript:;" data-id="#contact">Contact</a></li>
+            <li><a href="javascript:;" data-id="news" v-on:click="moveTo">Social Activities & News</a></li>
+            <li><a href="javascript:;" data-id="contact" v-on:click="moveTo">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -69,17 +70,17 @@
 </template>
 
 <script>
-  import '../assets/scss/main.scss';
+  import '../assets/scss/main.scss';      
   export default {
     mounted: function () {  
       window.addEventListener('scroll', function(){
-        handleScroll();
-        menuPosition();
+        /*handleScroll();*/
+        /*menuPosition();*/
       });
       window.addEventListener("DOMContentLoaded", function(){
-        scrollEvent();
+        /*scrollEvent();*/
       });
-      function handleScroll () {
+      /*function handleScroll () {
         let header = document.querySelector("header");
         const menuItem = $(".mainmenu").find("a");
         if( window.scrollY > 50 ){
@@ -119,6 +120,63 @@
             }
           }
         }); 
+      }*/
+    },
+    methods: {
+      moveTo (e) {
+        const link = $(".mainmenu").find("a");
+        link.removeClass("active");
+        e.target.classList.add("active");
+        const dataId = e.target.getAttribute('data-id');
+        const sectionID =  document.getElementById(dataId);
+        const headerWrap = document.querySelector("header");
+        document.querySelector(".mainmenu").classList.remove('opened');
+        document.querySelector(".hamb-menu").classList.remove('opened');
+        if ( sectionID === null){
+          this.$router.push("/").then(() => {
+            const activeDataId = e.target.getAttribute('data-id');
+            const activeSectionID =  document.getElementById(activeDataId);
+            window.scrollTo({
+              top: activeSectionID.offsetTop - 100,
+              left: 0,
+              behavior: 'smooth'
+            });
+          });  
+        }else{
+          const topVal = sectionID.offsetTop - 100;
+          window.scrollTo({
+              top: topVal,
+              left: 0,
+              behavior: 'smooth'
+          });
+
+        }
+      },
+      handleScroll: function(evt, el) {
+        if (window.scrollY > 50) {
+          el.classList.add("min");
+        }else{
+          el.classList.remove("min");
+        }
+        const menuItem = $(".mainmenu li").children("a");
+        menuItem.each(function() {
+          const id = $("#"+$(this).attr("data-id"));
+          if ( id.length > 0 ){
+            $(this).attr("data-top", id.offset().top - 104 );
+            if ($(window).scrollTop() > $(this).attr("data-top") ){
+              menuItem.removeClass('active');
+              $(this).addClass('active');
+            }else if( window.scrollY === 0 ){
+              menuItem.removeClass('active');
+            }
+          }
+        }); 
+
+      },
+      mobileMenu: function( event ) {
+        const menu =  document.querySelector(".mainmenu")
+        event.target.classList.toggle('opened');
+        menu.classList.toggle('opened');
       }
     }
   }

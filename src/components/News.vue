@@ -64,14 +64,7 @@ export default {
         }
       ]
     }
-  },
-  /*methods:{
-    goToDetail(prodId) {
-        let proId=prodId
-        this.$router.push({name:'detail',params:{Pid:proId}})
-    }
   }
-  */
 }
 
 </script>

@@ -9,12 +9,12 @@
             <div class="container">
                 <div class="row mx-lg-0">
                     <div class="col-lg-6 pl-lg-0 pr-lg-6">
-                        <p>ABK Technologies is founded by top finance professionals who managed pioneer financial institutions regulated under FCA, MFSA, CySEC, BDDK and BaFin.</p>
-                        <p class="mt-3">ABK Technologies professionals expertise in financial industry and financial engineering which provides the opportunity to the clients having flexibility to create their own instruments and name the instruments as they want. Clients for example may create pairs XAU/XAG or XAU/DAX or the other way around for their own clients.</p>
-                        <p class="mt-3">ABK Technology designes (provides) the best solution for its clients and clients of them.</p>
+                        <p>Our mission is to offer fair, transparent and easily accessible credit facilities to consumer and small businesses. Without paperwork – No long waiting times. Using the advanced technologies, we reduce application times by matter of seconds. We create value for our partners by empowering them with tools to operate in the lending space through a technology-driven process.</p>
+                        <p class="mt-3">As a Fintech company all structural need are in development process already.</p>
+                        <p class="mt-3">Targeted Ignition date is 2thQ of 2020.</p>
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-6 px-lg-0">
-                        <img src="../assets/img/abktech-img1.jpg" alt="" class="w-100">
+                        <img src="../assets/img/legendingo-img1.jpg" alt="" class="w-100">
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
 
 <style lang="scss" scoped>
     .abktech{
-        background: url("../assets/img/abktech-banner.jpg") no-repeat center center;
+        background: url("../assets/img/legendingo-banner.jpg") no-repeat center center;
     }
 </style>
 <script>
@@ -32,7 +32,7 @@
         name: 'App',
         metaInfo: {
             title: 'ABK HOLDING',
-            titleTemplate: '%s | ABK Tech',
+            titleTemplate: '%s | Legendingo',
             meta: [
             { name: 'description', content: 'ABK Technologies is founded by top finance professionals who managed pioneer financial institutions regulated under FCA, MFSA, CySEC, BDDK and BaFin.' },
             ]
