@@ -21,19 +21,19 @@ Vue.use(VueRouter);
 Vue.use(VueMeta);
 
 const routes = [
-    { path: "/", component: Home, meta: { requiresAuth: true } },
-    { path: "/Bpprime", component: Bpprime},
-    { path: "/Wamoio", component: Wamoio},
-    { path: "/Icrypex", component: Icrypex},
-    { path: "/CrescoCapital", component: CrescoCapital},
-    { path: "/Ikaros", component: Ikaros},
-    { path: "/AbkTech", component: AbkTech},
-    { path: "/Lendiglo", component: Lendiglo},
-    { path: "/PlayOnFinance", component: PlayOnFinance},
-    { path: "/SkyFx", component: SkyFx},
-    { path: "/NyFx", component: NyFx},
-    { path: "/NyFxPrime", component: NyFxPrime},
-    { path: "/Detail/:Pid", component: Detail, name:'detail' },
+    { path: "/en/", component: Home},
+    { path: "/en/Bpprime", component: Bpprime},
+    { path: "/en/Wamoio", component: Wamoio},
+    { path: "/en/Icrypex", component: Icrypex},
+    { path: "/en/CrescoCapital", component: CrescoCapital},
+    { path: "/en/Ikaros", component: Ikaros},
+    { path: "/en/AbkTech", component: AbkTech},
+    { path: "/en/Lendiglo", component: Lendiglo},
+    { path: "/en/PlayOnFinance", component: PlayOnFinance},
+    { path: "/en/SkyFx", component: SkyFx},
+    { path: "/en/NyFx", component: NyFx},
+    { path: "/en/NyFxPrime", component: NyFxPrime},
+    { path: "/en/Detail/:Pid", component: Detail, name:'detail' },
     { path: "*", component: Home }
 ];
 

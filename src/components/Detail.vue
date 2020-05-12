@@ -55,7 +55,7 @@ export default{
 
 <style lang="scss" scoped>
     .detail{
-        padding-top:165px;
+        padding-top:130px;
         @media screen and(max-width:991px){
             padding-top:102px;
         }

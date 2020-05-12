@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.12.0",
-    "postscribe": "^2.0.8",
     "swiper": "^5.3.7",
     "vue": "^2.5.11",
     "vue-meta": "^2.3.3",

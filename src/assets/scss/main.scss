@@ -33,7 +33,12 @@ input:-webkit-autofill {
 .btn{
     min-width:200px;
 }
+.animated{
+    animation-duration: .7s;
+    animation-fill-mode: both;
+}
 
+/*Main*/
 header{
     background: rgba(#fff, .7);
     position:fixed;
@@ -43,7 +48,7 @@ header{
     box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.06);
     transition:background .4s;
     .logo{
-        width:202px;
+        width:140.3px;
         transition:.4s;
         @media screen and(max-width:$screenmd){
             width:87.7px;
@@ -182,7 +187,6 @@ header{
         }
     }
 }
-
 footer{
     #contact{
         background: url($img+"footer-bg.jpg") no-repeat 26% center;
@@ -241,8 +245,9 @@ footer{
     }
 }
 
+/*Pages*/
 .companies{
-    padding-top:165px;
+    padding-top:130px;
     @media screen and(max-width:$screenmd){
         padding-top:102px;
     }
@@ -277,8 +282,8 @@ footer{
     to {
         opacity: 1;
     }
-    }
-    @keyframes fadeIn {
+}
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -286,4 +291,7 @@ footer{
     to {
         opacity: 1;
     }
+}
+.fadeIn{
+    animation-name: fadeIn;
 }

@@ -4,6 +4,9 @@ import VueMeta from 'vue-meta';
 import { router } from "./router";
 import App from './layouts/Main.vue';
 
+import './assets/scss/main.scss'; 
+
+
 Vue.use(VueMeta, {
   keyName: 'head'
 });

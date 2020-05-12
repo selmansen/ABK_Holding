@@ -69,8 +69,7 @@
   </div>
 </template>
 
-<script>
-  import '../assets/scss/main.scss';      
+<script>     
   export default {
     methods: {
       moveTo (e) {
@@ -86,19 +85,11 @@
           this.$router.push("/").then(() => {
             const activeDataId = e.target.getAttribute('data-id');
             const activeSectionID =  document.getElementById(activeDataId);
-            window.scrollTo({
-              top: activeSectionID.offsetTop - 100,
-              left: 0,
-              behavior: 'smooth'
-            });
+            $("html, body").stop(true, false).animate({scrollTop: activeSectionID.offsetTop - 100,}, 700);
           });  
         }else{
           const topVal = sectionID.offsetTop - 100;
-          window.scrollTo({
-              top: topVal,
-              left: 0,
-              behavior: 'smooth'
-          });
+          $("html, body").stop(true, false).animate({scrollTop: topVal}, 700);
 
         }
       },
@@ -113,7 +104,7 @@
           const id = $("#"+$(this).attr("data-id"));
           if ( id.length > 0 ){
             $(this).attr("data-top", id.offset().top - 104 );
-            if ($(window).scrollTop() > $(this).attr("data-top") ){
+            if ( window.scrollY > $(this).attr("data-top") ){
               menuItem.removeClass('active');
               $(this).addClass('active');
             }else if( window.scrollY === 0 ){
