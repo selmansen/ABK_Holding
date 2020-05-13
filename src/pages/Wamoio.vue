@@ -2,7 +2,7 @@
     <div class="companies">
         <div class="banner wamoio">
             <div class="container h-100 d-flex align-items-center justify-content-center flex-column">
-                <a href="https://wamo.io" target="_blank" class="btn btn-success">Visit Web Site</a>
+                <a href="https://wamo.io" target="_blank" class="btn btn-success mt-lg-0 mt-auto mb-0">Visit Web Site</a>
             </div>
         </div>
         <div class="content py-lg-20 py-10">
@@ -34,6 +34,9 @@
 <style lang="scss" scoped>
     .wamoio{
         background: url("../assets/img/Wamoio.jpg") no-repeat center center;
+        @media screen and(max-width:991px){
+            background: url("../assets/img/Wamoio-mobile-banner.jpg") no-repeat center center;
+        }
     }
 </style>
 <script>

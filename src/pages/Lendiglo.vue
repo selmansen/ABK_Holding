@@ -1,6 +1,6 @@
 <template>
     <div class="companies">
-        <div class="banner abktech"></div>
+        <div class="banner lendiglo"></div>
         <div class="content py-lg-20 py-10">
             <div class="container">
                 <div class="row mx-lg-0">
@@ -18,8 +18,11 @@
 </template>
 
 <style lang="scss" scoped>
-    .abktech{
+    .lendiglo{
         background: url("../assets/img/lendiglo-banner.jpg") no-repeat center center;
+        @media screen and(max-width:991px){
+            background: url("../assets/img/lendiglo-mobile-banner.jpg") no-repeat center center;
+        }
     }
 </style>
 <script>

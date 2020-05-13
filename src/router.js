@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Bpprime from "./pages/Bpprime";
 import Wamoio from "./pages/Wamoio";
 import Icrypex from "./pages/Icrypex";
-import CrescoCapital from "./pages/CrescoCapital";
 import Ikaros from "./pages/Ikaros";
 import AbkTech from "./pages/AbkTech";
 import Lendiglo from "./pages/Lendiglo";
@@ -25,7 +24,6 @@ const routes = [
     { path: "/en/Bpprime", component: Bpprime},
     { path: "/en/Wamoio", component: Wamoio},
     { path: "/en/Icrypex", component: Icrypex},
-    { path: "/en/CrescoCapital", component: CrescoCapital},
     { path: "/en/Ikaros", component: Ikaros},
     { path: "/en/AbkTech", component: AbkTech},
     { path: "/en/Lendiglo", component: Lendiglo},

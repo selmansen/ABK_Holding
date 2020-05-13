@@ -19,6 +19,9 @@
 <style lang="scss" scoped>
     .playonfinance{
         background: url("../assets/img/playonfinance-banner.jpg") no-repeat center center;
+        @media screen and(max-width:991px){
+            background: url("../assets/img/playonfinance-mobile-banner.jpg") no-repeat center center;
+        }
     }
 </style>
 <script>
