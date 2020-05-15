@@ -55,7 +55,6 @@ $container-max-widths: (
 	xl: 1200px
 );
 
-
 // TYPE
 $font-family-base: $font;
 $headings-font-weight: 300;
@@ -71,6 +70,8 @@ $btn-border-radius:0;
 $btn-padding-x: 1.5rem;
 $btn-padding-y: .72rem; 
 $btn-font-weight: 400;
+$btn-focus-box-shadow: none !important;
+$btn-box-shadow:none !important;
 
 //COLOR
 $success: #a92807;
@@ -94,9 +95,4 @@ $input-focus-box-shadow:          none;
 $input-border-radius:             0px;
 $input-padding-y:                 1.125rem;
 
-// $hr-border-color:               $orange;
-// $hr-border-width:               2px;
-// $alert-border-radius:           0px;
-// $alert-bg-level:                    0;
-// $alert-border-level:                0;
-// $alert-color-level:                 -10;
+$alert-border-radius:           0px;

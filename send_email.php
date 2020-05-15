@@ -1,78 +1,62 @@
 <?php
 
-session_start();
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
+header('Content-type: application/json');
+header('Access-Control-Allow-Headers: Content-Type');
+header("Access-Control-Allow-Origin: *");
+
+$inputJSON = file_get_contents('php://input');
+$input = json_decode($inputJSON, TRUE);
+
+$name = $input['name'];
+$email = $input['email'];
+$tel = $input['tel'];
+$subject = $input['subject'];
+
 if(isset($_POST)){
 
-    if($_POST["name"] && $_POST["phone"] && $_POST["email"] && $_POST["message"]){
+    if($name && $email && $tel && $subject){
 
-        $mail = new PHPMailer(true);
+        $mail = new PHPMailer;
 
-        try {
+        try{
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
-            $mail->From 	  = "support@tamayotoservis.com";
-            $mail->FromName   = "Müşteri İletişim Formu";
-            $mail->Host       = 'mail.markahost.net';
+            $mail->From 	  = "info@abkholding.com";
+            $mail->FromName   = "www.abkholding.com";
+            $mail->Host       = 'smtpout.secureserver.net';
             $mail->SMTPAuth   = true;
-            $mail->SMTPSecure = 'tls';
-            $mail->Username   = 'support@tamayotoservis.com';
-            $mail->Password   = 'LPC?462zm';
+            $mail->SMTPSecure = 'ssl';
+            $mail->Username   = 'info@abkholding.com';
+            $mail->Password   = 'VY@;7TuYE';
             $mail->CharSet = "utf8";
-            $mail->Port       = 587;
-            $mail->SMTPOptions = array(
-                'ssl' => array(
-                    'verify_peer' => false,
-                    'verify_peer_name' => false,
-                    'allow_self_signed' => true
-                )
-            );
-        
+            $mail->Port       = 465;
+            
             //Recipients
-            $mail->addAddress("support@tamayotoservis.com", "Tamay Support");
-        
+            $mail->addAddress("info@abkholding.com", "info@abkholding.com");
+
             // Content
             $mail->isHTML(true);
-            $mail->Subject = 'Müşteri İletişim Formu';
-            $mail->Body    = '<table width="640"><tr><th align="left">Ad Soyad:</th><td>'. $_POST["name"] .'</td></tr><tr><th align="left">Telefon:</th><td>' . $_POST["phone"] . '</td></tr><tr><th align="left">E-mail:</th><td>' . $_POST["email"] . '</td></tr><tr><th align="left">Mesaj:</th><td>' . $_POST["message"] . '</td></tr></table>';
+            $mail->Subject = 'ABK Contact Form';
+            $mail->Body    = '<table width="640"><tr><th align="left">Name Surname:</th><td>'. $name .'</td></tr><tr><th align="left">Phone:</th><td>' . $tel . '</td></tr><tr><th align="left">E-mail:</th><td>' . $email . '</td></tr><tr><th align="left">Subject:</th><td>' . $subject . '</td></tr></table>';
 
             if ( $mail->send() ){
-                
-                $alert = array(
-                    "message" => "Mesajınız başarılı bir şekilde gönderildi.",
-                    "type"   => "success"
-                );
-
+                echo json_encode(["message" => "Mesajınız başarılı bir şekilde gönderildi.", "type"   => "success" ], true);  
             }else{
-
-                $alert = array(
-                    "message" => "Mesajınız gönderilirken bir hata oluştu.",
-                    "type"   => "danger"
-                );
+                echo json_encode(["message" => "Mesajınız gönderilirken bir hata oluştu.", "type"   => "danger" ], true);
 
             }
-
         }catch (Exception $e) {
-            $alert = array(
-                "message" => $e->getMessage(),
-                "type"   => "danger"
-            );
-
+            echo json_encode(["message" => $e->getMessage(), "type"   => "danger" ], true);
         } 
 
     }else{
-        $alert = array(
-            "message" => "Lütfen tüm alanları doldurunuz!",
-            "type"   => "danger"
-        );
+        echo json_encode(["message" => "Lütfen tüm alanları doldurunuz!", "type"   => "danger" ], true);
     }
-
-    $_SESSION["alert"] = $alert;
-    header("Location: index#contact");
-
 }
+
+?>

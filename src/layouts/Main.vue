@@ -28,23 +28,23 @@
               <div class="col-xl-6 col-lg-9 offset-xl-6 offset-lg-3">
                 <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
                 <div class="form-wrap p-lg-8 p-4 bg-white">
-                  
-                  <form action="./send_email.php" method="post">
+                  <form @submit="onSubmit">
                     <div class="d-flex inputGroup flex-wrap">
                       <div>
-                        <input class="form-control" type="name" name="name" placeholder="Name Surname" required>
+                        <input class="form-control" type="name" name="name" v-model="form.name" placeholder="Name Surname" required>
                       </div>
                       <div class="ml-md-3 mt-md-0 mt-3">
-                        <input class="form-control" type="email" name="email" placeholder="E-Mail" required>
+                        <input class="form-control" type="email" name="email" v-model="form.email" placeholder="E-Mail" required>
                       </div>
                       <div class="mt-3">
-                        <input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
+                        <input class="form-control" type="tel" name="phone" v-model="form.tel" placeholder="Phone Number" required>
                       </div>
                       <div class="ml-md-3 mt-3">
-                        <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                        <input class="form-control" type="text" name="subject" v-model="form.subject" placeholder="Subject" required>
                       </div>
                     </div>
                     <button class="btn btn-success w-100 mt-3">Send</button>
+                    <div v-if="form.result != null" :class="form.type">{{form.result}}</div>
                   </form>
                 </div>
               </div>
@@ -70,9 +70,22 @@
 </template>
 
 <script>     
+  import axios from 'axios';
   export default {
+    data(){
+      return{
+        form: {
+              name: null,
+              email: null,
+              tel: null,
+              subject: null,
+              result:null,
+              type:""
+          }
+      }
+    },
     methods: {
-      moveTo (e) {
+      moveTo: function (e) {
         const link = $(".mainmenu").find("a");
         link.removeClass("active");
         e.target.classList.add("active");
@@ -118,7 +131,42 @@
         const menu =  document.querySelector(".mainmenu")
         event.target.classList.toggle('opened');
         menu.classList.toggle('opened');
-      }
+      },
+      onSubmit: function (e) {  
+            const vm = this;
+            axios({
+                method: 'post',
+                url: '/send_email.php',
+                data: {
+                  'name': this.form.name,
+                  'email': this.form.email,
+                  'tel': this.form.tel,
+                  'subject': this.form.subject,
+                },
+            }).then(response => {
+                this.form.result = response.data.message;
+                this.form.type = 'alert mt-3 alert-'+response.data.type;  
+            }).catch(error => {
+                console.log(error.message)
+            }).then(function () {
+              const inputs = document.querySelectorAll(".form-control");
+              for(var i = 0; inputs.length > i; i++){
+                inputs[i].value = "";
+              }
+              setTimeout(function(){
+                vm.form.name = null;
+                vm.form.email = null;
+                vm.form.tel = null;
+                vm.form.subject = null;
+                vm.form.result = null;
+                vm.form.type = "";
+
+              }, 4000);
+            });
+            this.form.result = "Loading to email.";
+            this.form.type = 'alert mt-3 alert-info';
+            e.preventDefault();
+        }
     }
   }
 </script>
