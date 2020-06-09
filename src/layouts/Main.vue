@@ -7,13 +7,8 @@
         <div class="mainmenu text-lg-left text-center">
           <ul>
             <li><a href="/en/">Home</a></li>
-            <li><a href="javascript:;" data-id="aboutus" v-on:click="moveTo">About Us </a>
-              <div>
-                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Sectors</a>
-                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Companies</a>
-                <a href="javascript:;" data-id="about-companies" v-on:click="moveTo">Projects</a>
-              </div>
-            </li>
+            <li><a href="javascript:;" data-id="aboutus" v-on:click="moveTo">About Us </a></li>
+            <li><a href="javascript:;" data-id="location" v-on:click="moveTo">Companies</a></li>
             <li><a href="javascript:;" data-id="news" v-on:click="moveTo">Social Activities & News</a></li>
             <li><a href="javascript:;" data-id="contact" v-on:click="moveTo">Contact</a></li>
           </ul>
@@ -22,10 +17,10 @@
     </header>
       <router-view></router-view>
       <footer>
-        <div id="contact" class="py-lg-20 py-16">
+        <div id="contact">
           <div class="container">
-            <div class="row">
-              <div class="col-xl-6 col-lg-9 offset-xl-6 offset-lg-3">
+            <div class="row d-flex justify-content-center">
+              <div class="col-xl-6 col-lg-9">
                 <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
                 <div class="form-wrap p-lg-8 p-4 bg-white">
                   <form @submit="onSubmit">

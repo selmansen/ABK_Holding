@@ -66,7 +66,7 @@ $h4-font-size: 24px;
 // BTNS
 $btn-font-size: 20px;
 $btn-font-size-lg: 18px;
-$btn-border-radius:0;
+$btn-border-radius:30px;
 $btn-padding-x: 1.5rem;
 $btn-padding-y: .72rem; 
 $btn-font-weight: 400;
@@ -76,6 +76,7 @@ $btn-box-shadow:none !important;
 //COLOR
 $success: #a92807;
 $secondary: #384657;
+$gray: #969696;
 
 
 // //INPUT
@@ -92,7 +93,8 @@ $input-focus-border-color:        transparent;
 $input-focus-color:               #687179;
 $input-focus-width:               0px;
 $input-focus-box-shadow:          none;
-$input-border-radius:             0px;
+$input-border-radius:             30px;
 $input-padding-y:                 1.125rem;
+$input-padding-x:                 1.25rem;
 
 $alert-border-radius:           0px;

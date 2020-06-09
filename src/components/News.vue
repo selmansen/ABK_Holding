@@ -74,7 +74,7 @@ export default {
         z-index: 1;
         &:before{
             content:"";
-            background: #a92807;
+            background: #1e1d22;
             width:100%;
             height:500px;
             position:absolute;
