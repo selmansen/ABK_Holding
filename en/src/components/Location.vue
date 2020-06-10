@@ -1,8 +1,8 @@
 <template>
     <div id="location" class="pt-16">
-      <h2 class="text-center">Our Group Companies</h2>
-      <h4 class="text-center mt-11">Strenght that is formed wit joined ventures & business partnerships</h4>
       <div class="container">
+        <h2 class="text-center">Our Group Companies</h2>
+        <h4 class="text-center mt-11">Strenght that is formed wit joined ventures & business partnerships</h4>
         <div class="map mt-16"></div>
         <div class="item-wrap d-flex d-xl-inline-block justify-content-between flex-wrap">
           <div class="items" v-for="(data,index) in pins" :key="index">
@@ -101,6 +101,9 @@
 <style lang="scss" scoped>
 #location{
     padding-bottom:180px;
+    @media screen and(max-width:767px){
+      padding-bottom:100px;
+    }
     .map{
       background: url("../assets/img/location-bg.png") no-repeat center top;
       width:100%;
@@ -168,6 +171,7 @@
           @media screen and(max-width:767px){
             width:80px;
             height:80px;
+            background-size:80px !important;
           }
           &.tr{
             background: url("../assets/img/flag-tr.svg") no-repeat center center;
@@ -209,6 +213,9 @@
       img{
         display: block;
         margin: auto;
+        @media screen and(max-width:767px){
+          width:100%;
+        }
       }
       &:first-child, &:nth-child(8){
         margin-left:0;

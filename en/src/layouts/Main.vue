@@ -155,7 +155,6 @@
                 vm.form.subject = null;
                 vm.form.result = null;
                 vm.form.type = "";
-
               }, 4000);
             });
             this.form.result = "Loading to email.";

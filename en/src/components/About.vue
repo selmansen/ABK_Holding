@@ -93,6 +93,9 @@ export default {
         display: flex;
         flex-wrap: wrap;
         width:466px;
+        @media screen and(max-width:991px){
+            width:100%;
+        }
         .category_li{
             width:155px;
             height:155px;
@@ -107,6 +110,12 @@ export default {
             position:relative;
             cursor: pointer;
             transition:.7s;
+            @media screen and(max-width:991px){
+                width:33.33%;
+            }
+            @media screen and(max-width:767px){
+                width:50%;
+            }
             >img{
                 height:30px;
             }

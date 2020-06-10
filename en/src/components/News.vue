@@ -14,9 +14,9 @@
                     <hr class="d-xl-none my-10">
                     <div class="other-news p-xl-3 p-1">
                         <div class="mask p-3">
-                            <div class="list d-flex mt-4 border-top pt-4 align-items-start" v-for="(data,index) in news" :key="index">
+                            <div class="list d-md-flex mt-4 border-top pt-4 align-items-start" v-for="(data,index) in news" :key="index">
                                 <router-link :to="'/en/Detail/'+ data.newsId" tag="a"><img :src="data.image"></router-link>
-                                <div class="ml-4">
+                                <div class="ml-md-4 mt-4 mt-md-0">
                                     <span class="date text-secondary">{{data.newsDate}}</span>
                                     <p class="mt-3"> <router-link :to="'/en/Detail/'+ data.newsId" tag="a" class="text-secondary">{{data.newsTitle}}</router-link></p>
                                 </div>
@@ -84,6 +84,9 @@ export default {
             @media screen and(max-width:1231px){
                 height: calc(50% - 225px);
             }
+            @media screen and(max-width:767px){
+                height: 320px;
+            }
         }
         .first-new{
             img{
@@ -114,6 +117,9 @@ export default {
                 }
                 img{
                     width:200px;
+                    @media screen and(max-width:767px){
+                        width:100%;
+                    }
                 }
             }
         }

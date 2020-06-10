@@ -44,7 +44,7 @@
           },
           {
             slideId:"slide5",
-            slideTitle:"ICRYPEX WAS THE MAIN SPONSOR OF KALDER’S QUALITY CONGRESS 2019 <br class='d-xl-block d-none'>INVITING DR. NOURIEL ROUBINI AS MAIN EVENT SPEAKER.",
+            slideTitle:"ICRYPEX WAS THE MAIN SPONSOR OF KALDER’S QUALITY CONGRESS 2019 INVITING DR. NOURIEL ROUBINI AS MAIN EVENT SPEAKER.",
             slideLink:"/en/Icrypex"
           },
           {
