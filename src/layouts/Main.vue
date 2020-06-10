@@ -15,52 +15,52 @@
         </div>
       </div>
     </header>
-      <router-view></router-view>
-      <footer>
-        <div id="contact">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-xl-6 col-lg-9">
-                <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
-                <div class="form-wrap p-lg-8 p-4 bg-white">
-                  <form @submit="onSubmit">
-                    <div class="d-flex inputGroup flex-wrap">
-                      <div>
-                        <input class="form-control" type="name" name="name" v-model="form.name" placeholder="Name Surname" required>
-                      </div>
-                      <div class="ml-md-3 mt-md-0 mt-3">
-                        <input class="form-control" type="email" name="email" v-model="form.email" placeholder="E-Mail" required>
-                      </div>
-                      <div class="mt-3">
-                        <input class="form-control" type="tel" name="phone" v-model="form.tel" placeholder="Phone Number" required>
-                      </div>
-                      <div class="ml-md-3 mt-3">
-                        <input class="form-control" type="text" name="subject" v-model="form.subject" placeholder="Subject" required>
-                      </div>
+    <router-view></router-view>
+    <footer>
+      <div id="contact">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-xl-6 col-lg-9">
+              <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
+              <div class="form-wrap p-lg-8 p-4 bg-white">
+                <form @submit="onSubmit">
+                  <div class="d-flex inputGroup flex-wrap">
+                    <div>
+                      <input class="form-control" type="name" name="name" v-model="form.name" placeholder="Name Surname" required>
                     </div>
-                    <button class="btn btn-success w-100 mt-3">Send</button>
-                    <div v-if="form.result != null" :class="form.type">{{form.result}}</div>
-                  </form>
-                </div>
+                    <div class="ml-md-3 mt-md-0 mt-3">
+                      <input class="form-control" type="email" name="email" v-model="form.email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="mt-3">
+                      <input class="form-control" type="tel" name="phone" v-model="form.tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="ml-md-3 mt-3">
+                      <input class="form-control" type="text" name="subject" v-model="form.subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+                  <button class="btn btn-success w-100 mt-3">Send</button>
+                  <div v-if="form.result != null" :class="form.type">{{form.result}}</div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-social py-lg-16 py-10 d-flex flex-column align-items-center">
-          <img src="../assets/img/ft-abk-logo.svg" alt="" width="130">
-          <div class="social-media mt-lg-10 mt-6">
-            <a href="#" class="fc"></a>
-            <a href="#" class="tw"></a>
-            <a href="#" class="yt"></a>
-            <a href="#" class="pt"></a>
-          </div>
+      </div>
+      <div class="footer-social py-lg-16 py-10 d-flex flex-column align-items-center">
+        <img src="../assets/img/ft-abk-logo.svg" alt="" width="130">
+        <div class="social-media mt-lg-10 mt-6">
+          <a href="#" class="fc"></a>
+          <a href="#" class="tw"></a>
+          <a href="#" class="yt"></a>
+          <a href="#" class="pt"></a>
         </div>
-        <div class="footer-bottom py-lg-5 py-3 text-center">
-          <div class="container">
-            <p>© 2020 ABK</p>
-          </div>
+      </div>
+      <div class="footer-bottom py-lg-5 py-3 text-center">
+        <div class="container">
+          <p>© 2020 ABK</p>
         </div>
-      </footer>
+      </div>
+    </footer>
   </div>
 </template>
 

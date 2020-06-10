@@ -5,82 +5,99 @@
       <div class="container">
         <div class="map mt-16"></div>
         <div class="item-wrap d-flex d-xl-inline-block justify-content-between flex-wrap">
-          <div class="items">
+          <div class="items" v-for="(data,index) in pins" :key="index">
             <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-icrypex.svg" alt="">
+              <img :src="data.icon" alt="">
+              <span :class="data.flag" class="flag"></span>
             </div>
-            <img src="../assets/img/m-icrypex-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-ikaros.svg" alt="">
-            </div>
-            <img src="../assets/img/m-ikaros-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-wamo.svg" alt="">
-            </div>
-            <img src="../assets/img/m-wamo-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-aa-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-abkpayment.svg" alt="">
-            </div>
-            <img src="../assets/img/m-abkpayment-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-abktech.svg" alt="">
-            </div>
-            <img src="../assets/img/m-abktech-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-abknv.svg" alt="">
-            </div>
-            <img src="../assets/img/m-abknv-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-skyfx-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-toros-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-bpprime-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-nyfxprime-logo.svg" alt="">
-          </div>
-          <div class="items">
-            <div class="circle d-flex align-items-center justify-content-center">
-              <img src="../assets/img/ic-fx.svg" alt="">
-            </div>
-            <img src="../assets/img/m-nyfxglobal-logo.svg" alt="">
+            <router-link :to="data.link" tag="a"><img :src="data.logo" alt=""></router-link>
           </div>
         </div>
       </div>
     </div>
 </template>
+<script>
+  export default {
+    data(){
+      return{
+        pins:[
+          {
+            icon:require('../assets/img/ic-icrypex.svg'),
+            logo:require('../assets/img/m-icrypex-logo.svg'),
+            flag:"tr",
+            link:"/en/Icrypex"
+          },
+          {
+            icon:require('../assets/img/ic-ikaros.svg'),
+            logo:require('../assets/img/m-ikaros-logo.svg'),
+            flag:"tr",
+            link:"/en/Ikaros"
+          },
+          {
+            icon:require('../assets/img/ic-wamo.svg'),
+            logo:require('../assets/img/m-wamo-logo.svg'),
+            flag:"uk",
+            link:"/en/Wamoio"
+          },
+          {
+            icon:require('../assets/img/ic-aa.svg'),
+            logo:require('../assets/img/m-aa-logo.svg'),
+            flag:"tr",
+            link:""
+          },
+          {
+            icon:require('../assets/img/ic-abkpayment.svg'),
+            logo:require('../assets/img/m-abkpayment-logo.svg'),
+            flag:"singapore",
+            link:""
+          },
+          {
+            icon:require('../assets/img/ic-abktech.svg'),
+            logo:require('../assets/img/m-abktech-logo.svg'),
+            flag:"tr",
+            link:"/en/AbkTech"
+          },
+          {
+            icon:require('../assets/img/ic-abknv.svg'),
+            logo:require('../assets/img/m-abknv-logo.svg'),
+            flag:"holland",
+            link:""
+          },
+          {
+            icon:require('../assets/img/ic-fx.svg'),
+            logo:require('../assets/img/m-skyfx-logo.svg'),
+            flag:"stvincent",
+            link:"/en/SkyFx"
+          },
+          {
+            icon:require('../assets/img/ic-fx.svg'),
+            logo:require('../assets/img/m-toros-logo.svg'),
+            flag:"tr",
+            link:""
+          },
+          {
+            icon:require('../assets/img/ic-fx.svg'),
+            logo:require('../assets/img/m-bpprime-logo.svg'),
+            flag:"uk",
+            link:"/en/Bpprime"
+          },
+          {
+            icon:require('../assets/img/ic-fx.svg'),
+            logo:require('../assets/img/m-nyfxprime-logo.svg'),
+            flag:"stvincent",
+            link:"/en/NyFxPrime"
+          },
+          {
+            icon:require('../assets/img/ic-fx.svg'),
+            logo:require('../assets/img/m-nyfxglobal-logo.svg'),
+            flag:"uk",
+            link:"/en/NyFx"
+          },
+        ]
+      }
+    }
+  }
+</script>
 <style lang="scss" scoped>
 #location{
     padding-bottom:180px;
@@ -134,8 +151,38 @@
         }
         img{
           width:42px;
+          transition:.5s;
           @media screen and(max-width:767px){
             width:32px;
+          }
+        }
+        .flag{
+          width: 100px;
+          height: 100px;
+          left: -1px;
+          top: -1px;
+          position:absolute;
+          opacity: 0;
+          transform: translateZ(-160px) rotateY(-180deg);
+          transition:.5s;
+          @media screen and(max-width:767px){
+            width:80px;
+            height:80px;
+          }
+          &.tr{
+            background: url("../assets/img/flag-tr.svg") no-repeat center center;
+          }
+          &.uk{
+            background: url("../assets/img/flag-uk.svg") no-repeat center center;
+          }
+          &.singapore{
+            background: url("../assets/img/flag-singapore.svg") no-repeat center center;
+          }
+          &.holland{
+            background: url("../assets/img/flag-holland.svg") no-repeat center center;
+          }
+          &.stvincent{
+            background: url("../assets/img/flag-stvincent.svg") no-repeat center center;
           }
         }
         &:before{
@@ -159,11 +206,9 @@
           top:100%;
         }
       }
-      >img{
-        width:100px;
-        @media screen and(max-width:767px){
-          width:80px;
-        }
+      img{
+        display: block;
+        margin: auto;
       }
       &:first-child, &:nth-child(8){
         margin-left:0;
@@ -193,11 +238,11 @@
       }
       &:nth-child(5), &:nth-child(6), &:nth-child(7){
         @media screen and(max-width:1231px){
-          margin-top:160px;
+          margin-top:90px;
         }
       }
       &:nth-child(8){
-        margin-top:160px;
+        margin-top:90px;
         @media screen and(max-width:1231px){
           margin-left:78px;
           .circle{
@@ -207,10 +252,9 @@
           }
         }
       }
-      
       &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12){
         margin-left:167px;
-        margin-top:160px;
+        margin-top:90px;
         @media screen and(max-width:1231px){
           margin-left:78px;
         }
@@ -242,6 +286,18 @@
             &:before{
               display: none;
             }
+          }
+        }
+      }
+      &:hover{
+        .circle{
+          img{
+            transform: translateZ(-160px) rotateY(-180deg);
+            opacity: 0;
+          }
+          .flag{
+            transform: translateZ(0) rotateY(0);
+            opacity: 1;
           }
         }
       }

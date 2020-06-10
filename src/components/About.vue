@@ -129,7 +129,6 @@ export default {
                 display: flex;
                 transition:.5s;
                 img{
-                    width:100px;
                     margin:5px 0;
                 }
             }
