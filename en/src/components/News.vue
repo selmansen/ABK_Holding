@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="first-new" v-for="(data,index) in firstnews" :key="index">
-                        <router-link :to="'/en/Detail/'+ data.firstNewsId" tag="a"><img :src="data.firstImage" class="img-fluid"></router-link>
+                        <router-link :to="'/Detail/'+ data.firstNewsId" tag="a"><img :src="data.firstImage" class="img-fluid"></router-link>
                         <span class="date mt-4 text-secondary">{{data.firstNewsDate}}</span>
                         <h4 class="mt-2 font-weight-normal"><router-link :to="'/Detail/'+ data.firstNewsId" tag="a" class="text-secondary">{{data.firstNewsTitle}}</router-link></h4>
                     </div>
@@ -15,10 +15,10 @@
                     <div class="other-news p-xl-3 p-1">
                         <div class="mask p-3">
                             <div class="list d-md-flex mt-4 border-top pt-4 align-items-start" v-for="(data,index) in news" :key="index">
-                                <router-link :to="'/en/Detail/'+ data.newsId" tag="a"><img :src="data.image"></router-link>
+                                <router-link :to="'/Detail/'+ data.newsId" tag="a"><img :src="data.image"></router-link>
                                 <div class="ml-md-4 mt-4 mt-md-0">
                                     <span class="date text-secondary">{{data.newsDate}}</span>
-                                    <p class="mt-3"> <router-link :to="'/en/Detail/'+ data.newsId" tag="a" class="text-secondary">{{data.newsTitle}}</router-link></p>
+                                    <p class="mt-3"> <router-link :to="'/Detail/'+ data.newsId" tag="a" class="text-secondary">{{data.newsTitle}}</router-link></p>
                                 </div>
                             </div>
                         </div>

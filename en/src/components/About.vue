@@ -9,7 +9,6 @@
                   <p class="mt-5">ABK is a financial holding gathering its financial operations of CFDs and FX trading, Crypto Exchanges, Banking & FinTech, Insurance Brokerage, and Asset Management operating in different jurisdictions with Technology company to support group companies in terms of IT infrastructure, domain, trading platforms and so on.</p>
                   <p class="mt-5">ABK Group Brokerage Division provides online trading platforms through its licensed entities. With the stream live tradable prices clients can buy or sell at their own discretion, and get the support from multi-lingual staff. ABK services over 10,000 clients across the globe with a global workforce made up of local professionals across the markets in London, Istanbul, and far east Asia with more offices to come.</p>
                   <p class="mt-5">The Group brokerage entities offer a first-class reliable service to its Retail, Professional and Institutional clients, and enabling them to trade on margin over 500 products including Forex, CFDs, Commodities, Equities and Indices through the world prominent trading platforms Metatrader 4 and Metatrader 5 (Metaquotes®)</p>
-                  <a href="javascript:;" class="btn btn-success mt-10">More Info</a>
               </div>
               <div class="col-lg-5">
                   <div class="category mt-12">
@@ -25,11 +24,7 @@
                            <img src="../assets/img/ic-brokerage.svg" alt="">
                           <p>Brokerage</p>
                           <div class="logs">
-                              <img src="../assets/img/m-bpprime-logo.svg" alt="">
-                              <img src="../assets/img/m-nyfxprime-logo.svg" alt="">
-                              <img src="../assets/img/m-skyfx-logo.svg" alt="">
-                              <img src="../assets/img/m-nyfxglobal-logo.svg" alt="">
-                              <img src="../assets/img/m-toros-logo.svg" alt="">
+                              <img src="../assets/img/brokerage-logos.svg" alt="">
                           </div>
                       </div>
                       <div class="category_li">
@@ -139,16 +134,6 @@ export default {
                 transition:.5s;
                 img{
                     margin:5px 0;
-                }
-            }
-            &:nth-child(2){
-                .logs{
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    img{
-                        width: 58px;
-                        margin: 2px 5px;
-                    }
                 }
             }
             &.open{

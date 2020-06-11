@@ -15,12 +15,14 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <div id="sectorsSlider" class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex justify-content-center align-items-center" v-for="(data, index) in sectorsSlide" :key="index">
-          <router-link tag="a" :to="data.slideLink"><img :src="data.image" class="img-fluid"></router-link>
+    <div id="sectorsSlider">
+      <marquee-text :duration="45" :repeat="2">
+        <div class="item d-flex justify-content-center align-items-center" v-for="(data, index) in sectorsSlide" :key="index">
+          <router-link tag="a" :to="data.slideLink">
+            <img :src="data.image" class="img-fluid">
+          </router-link>
         </div>
-      </div>
+      </marquee-text>
     </div>
     <About></About>
     <Location></Location>
@@ -45,7 +47,7 @@
           {
             slideId:"slide5",
             slideTitle:"ICRYPEX WAS THE MAIN SPONSOR OF KALDER’S QUALITY CONGRESS 2019 INVITING DR. NOURIEL ROUBINI AS MAIN EVENT SPEAKER.",
-            slideLink:"/en/Icrypex"
+            slideLink:"/Icrypex"
           },
           {
             slideId:"slide4",
@@ -54,38 +56,38 @@
           {
             slideId:"slide1",
             slideTitle:"COVID-19: WE ARE STRONGER TOGETHER!",
-            slideLink:"/en/Detail/covid19-we-are-stronger"
+            slideLink:"/Detail/covid19-we-are-stronger"
           },
           {
             slideId:"slide2",
             slideTitle:"CHALLENGE ON THE ROAD!",
-            slideLink:"/en/Detail/challenge-on-the-road"
+            slideLink:"/Detail/challenge-on-the-road"
           },
           {
             slideId:"slide3",
             slideTitle:"ICRYPEX AND WAMO TO SPONSOR ADUS MOTORSPORTS.",
-            slideLink:"/en/Detail/icrypex-and-wamo-sponsors-adus"
+            slideLink:"/Detail/icrypex-and-wamo-sponsors-adus"
           },
         ],
         sectorsSlide:[
           {
-            slideLink:"/en/Icrypex",
+            slideLink:"/Icrypex",
             image: require('../assets/img/m-icrypex-logo.svg')
           },
           {
-            slideLink:"/en/Ikaros",
+            slideLink:"/Ikaros",
             image: require('../assets/img/m-ikaros-logo.svg')
           },
           {
-            slideLink:"/en/Wamoio",
+            slideLink:"/Wamoio",
             image: require('../assets/img/m-wamo-logo.svg')
           },
           {
-            slideLink:"/en/NyFx",
+            slideLink:"/NyFx",
             image: require('../assets/img/m-nyfxglobal-logo.svg')
           },
           {
-            slideLink:"/en/NyFxPrime",
+            slideLink:"/NyFxPrime",
             image: require('../assets/img/m-nyfxprime-logo.svg')
           },
           {
@@ -93,7 +95,7 @@
             image: require('../assets/img/m-abkpayment-logo.svg')
           },
           {
-            slideLink:"/en/AbkTech",
+            slideLink:"/AbkTech",
             image: require('../assets/img/m-abktech-logo.svg')
           },
           {
@@ -101,11 +103,11 @@
             image: require('../assets/img/m-aa-logo.svg')
           },
           {
-            slideLink:"/en/Bpprime",
+            slideLink:"/Bpprime",
             image: require('../assets/img/m-bpprime-logo.svg')
           },
           {
-            slideLink:"/en/SkyFx",
+            slideLink:"/SkyFx",
             image: require('../assets/img/m-skyfx-logo.svg')
           },
           {
@@ -134,17 +136,6 @@
         },
         autoplay: {
           delay: 5000,
-        }
-      });
-      var sectorsSlider = new Swiper ('#sectorsSlider', {
-        slidesPerView: 'auto',
-        loop:true,
-        centeredSlides:true,
-        simulateTouch:false,
-        allowTouchMove:false,
-        speed:3500,
-        autoplay: {
-          delay: 0,
         }
       });
     }
@@ -250,10 +241,7 @@
   #sectorsSlider{
     background: #f2f5f7;
     border-top:1px solid #a92807;
-    .swiper-wrapper{
-      transition-timing-function: linear;
-    }
-    .swiper-slide{
+    .item{
       width:210px;
       height: 100px;
       border-bottom: 1px solid #e5e5e5;

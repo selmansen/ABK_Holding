@@ -2,7 +2,7 @@
     <div id="location" class="pt-16">
       <div class="container">
         <h2 class="text-center">Our Group Companies</h2>
-        <h4 class="text-center mt-11">Strenght that is formed wit joined ventures & business partnerships</h4>
+        <h4 class="text-center mt-11">Strenght that is formed with joined ventures & business partnerships</h4>
         <div class="map mt-16"></div>
         <div class="item-wrap d-flex d-xl-inline-block justify-content-between flex-wrap">
           <div class="items" v-for="(data,index) in pins" :key="index">
@@ -25,19 +25,19 @@
             icon:require('../assets/img/ic-icrypex.svg'),
             logo:require('../assets/img/m-icrypex-logo.svg'),
             flag:"tr",
-            link:"/en/Icrypex"
+            link:"/Icrypex"
           },
           {
             icon:require('../assets/img/ic-ikaros.svg'),
             logo:require('../assets/img/m-ikaros-logo.svg'),
             flag:"tr",
-            link:"/en/Ikaros"
+            link:"/Ikaros"
           },
           {
             icon:require('../assets/img/ic-wamo.svg'),
             logo:require('../assets/img/m-wamo-logo.svg'),
             flag:"uk",
-            link:"/en/Wamoio"
+            link:"/Wamoio"
           },
           {
             icon:require('../assets/img/ic-aa.svg'),
@@ -55,7 +55,7 @@
             icon:require('../assets/img/ic-abktech.svg'),
             logo:require('../assets/img/m-abktech-logo.svg'),
             flag:"tr",
-            link:"/en/AbkTech"
+            link:"/AbkTech"
           },
           {
             icon:require('../assets/img/ic-abknv.svg'),
@@ -67,7 +67,7 @@
             icon:require('../assets/img/ic-fx.svg'),
             logo:require('../assets/img/m-skyfx-logo.svg'),
             flag:"stvincent",
-            link:"/en/SkyFx"
+            link:"/SkyFx"
           },
           {
             icon:require('../assets/img/ic-fx.svg'),
@@ -79,19 +79,19 @@
             icon:require('../assets/img/ic-fx.svg'),
             logo:require('../assets/img/m-bpprime-logo.svg'),
             flag:"uk",
-            link:"/en/Bpprime"
+            link:"/Bpprime"
           },
           {
             icon:require('../assets/img/ic-fx.svg'),
             logo:require('../assets/img/m-nyfxprime-logo.svg'),
             flag:"stvincent",
-            link:"/en/NyFxPrime"
+            link:"/NyFxPrime"
           },
           {
             icon:require('../assets/img/ic-fx.svg'),
             logo:require('../assets/img/m-nyfxglobal-logo.svg'),
             flag:"uk",
-            link:"/en/NyFx"
+            link:"/NyFx"
           },
         ]
       }

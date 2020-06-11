@@ -1,0 +1,62 @@
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
+header('Content-type: application/json');
+header('Access-Control-Allow-Headers: Content-Type');
+header("Access-Control-Allow-Origin: *");
+
+$inputJSON = file_get_contents('php://input');
+$input = json_decode($inputJSON, TRUE);
+
+$name = $input['name'];
+$email = $input['email'];
+$tel = $input['tel'];
+$subject = $input['subject'];
+
+if(isset($_POST)){
+
+    if($name && $email && $tel && $subject){
+
+        $mail = new PHPMailer;
+
+        try{
+            $mail->SMTPDebug = 0;
+            $mail->isSMTP();
+            $mail->From 	  = "info@abkholding.com";
+            $mail->FromName   = "www.abkholding.com";
+            $mail->Host       = 'smtpout.secureserver.net';
+            $mail->SMTPAuth   = true;
+            $mail->SMTPSecure = 'ssl';
+            $mail->Username   = 'info@abkholding.com';
+            $mail->Password   = 'VY@;7TuYE';
+            $mail->CharSet = "utf8";
+            $mail->Port       = 465;
+            
+            //Recipients
+            $mail->addAddress("info@abkholding.com", "info@abkholding.com");
+
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = 'ABK Contact Form';
+            $mail->Body    = '<table width="640"><tr><th align="left">Name Surname:</th><td>'. $name .'</td></tr><tr><th align="left">Phone:</th><td>' . $tel . '</td></tr><tr><th align="left">E-mail:</th><td>' . $email . '</td></tr><tr><th align="left">Subject:</th><td>' . $subject . '</td></tr></table>';
+
+            if ( $mail->send() ){
+                echo json_encode(["message" => "Mesajınız başarılı bir şekilde gönderildi.", "type"   => "success" ], true);  
+            }else{
+                echo json_encode(["message" => "Mesajınız gönderilirken bir hata oluştu.", "type"   => "danger" ], true);
+
+            }
+        }catch (Exception $e) {
+            echo json_encode(["message" => $e->getMessage(), "type"   => "danger" ], true);
+        } 
+
+    }else{
+        echo json_encode(["message" => "Lütfen tüm alanları doldurunuz!", "type"   => "danger" ], true);
+    }
+}
+
+?>

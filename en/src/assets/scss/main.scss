@@ -249,6 +249,19 @@ footer{
     }
 }
 
+/*marquee*/
+.marquee-text-wrap{
+    .marquee-text-text{
+        display: flex;
+    }
+    &:hover{
+        .marquee-text-text{
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+    }
+}
+
 /*Pages*/
 .companies{
     padding-top:130px;
