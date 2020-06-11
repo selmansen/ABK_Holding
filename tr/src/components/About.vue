@@ -21,6 +21,7 @@
                            <img src="../assets/img/ic-brokerage.svg" alt="">
                           <p>Automotive</p>
                           <div class="logs">
+                              <img src="../assets/img/ic-timer.svg" alt="">
                               Coming Soon
                           </div>
                       </div>
@@ -42,6 +43,7 @@
                           <img src="../assets/img/ic-nonfinancial.svg" alt="">
                           <p>Fintech</p>
                           <div class="logs">
+                              <img src="../assets/img/ic-timer.svg" alt="">
                               Coming Soon
                           </div>
                       </div>
@@ -139,14 +141,13 @@ export default {
                     margin:5px 0;
                 }
             }
-            &:nth-child(2){
+            &:nth-child(2), &:nth-child(5){
                 .logs{
-                    flex-wrap: wrap;
-                    flex-direction: row;
                     img{
-                        width: 58px;
+                        width: 36px;
                         margin: 2px 5px;
                     }
+                    color:#000;
                 }
             }
             &.open{

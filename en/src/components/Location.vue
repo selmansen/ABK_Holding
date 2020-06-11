@@ -2,7 +2,7 @@
     <div id="location" class="pt-16">
       <div class="container">
         <h2 class="text-center">Our Group Companies</h2>
-        <h4 class="text-center mt-11">Strenght that is formed with joined ventures & business partnerships</h4>
+        <h4 class="text-center mt-5">Strenght that is formed with joined ventures & business partnerships</h4>
         <div class="map mt-16"></div>
         <div class="item-wrap d-flex d-xl-inline-block justify-content-between flex-wrap">
           <div class="items" v-for="(data,index) in pins" :key="index">
@@ -213,6 +213,7 @@
       img{
         display: block;
         margin: auto;
+        max-width: 100%;
         @media screen and(max-width:767px){
           width:100%;
         }

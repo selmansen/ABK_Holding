@@ -20,9 +20,9 @@
       <div id="contact">
         <div class="container">
           <div class="row d-flex justify-content-center">
-            <div class="col-xl-6 col-lg-9">
-              <h2 class="bg-success text-white p-lg-8 p-4">Work with us</h2>
-              <div class="form-wrap p-lg-8 p-4 bg-white">
+            <div class="col-xl-5 col-lg-7">
+              <h2 class="text-white px-6 py-5">Contact Us</h2>
+              <div class="form-wrap px-6 py-5">
                 <form @submit="onSubmit">
                   <div class="d-flex inputGroup flex-wrap">
                     <div>

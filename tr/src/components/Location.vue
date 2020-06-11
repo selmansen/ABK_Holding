@@ -2,7 +2,7 @@
     <div id="location" class="pt-16">
       <div class="container">
         <h2 class="text-center">Our Group Companies</h2>
-        <h4 class="text-center mt-11">Strenght that is formed with joined ventures & business partnerships</h4>
+        <h4 class="text-center mt-5">Strenght that is formed with joined ventures & business partnerships</h4>
         <div class="map mt-16"></div>
         <div class="item-wrap d-flex justify-content-between flex-wrap">
           <div class="items" v-for="(data,index) in pins" :key="index">
@@ -28,7 +28,7 @@
               <img src="../assets/img/t-abkt.jpg" alt="" class="img-fluid bg mr-lg-8">
               <div class="mt-lg-0 mt-6">
                 <p>ABK Technologies has been founded by top finance professionals who have had top managerial positions in well-known financial institutions regulated under FCA, MFSA, BDDK and BaFin.</p>
-                <p class="mt-6">ABK Technologies professionals expertise in financial industry and financial engineering which provides the opportunity to the clients having flexibility to shape the mapping of their projects, to create their own instruments and label the instruments freely. ABK Technology designs the best solution for its clients and clients of the clients.</p>
+                <p class="mt-6">ABK Technologies professionals expertise in financial industry and financial engineering providing opportunity to its clients having flexibility to shape the mapping of their projects, to create their own instruments and label the instruments freely. ABK Technology designs the best solution for its clients and clients of the clients.</p>
               </div>
             </div>
           </tab>
