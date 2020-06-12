@@ -26,18 +26,18 @@ if(isset($_POST)){
         try{
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
-            $mail->From 	  = "info@abkholding.com";
-            $mail->FromName   = "www.abkholding.com";
+            $mail->From 	  = "info@abk-holding.com";
+            $mail->FromName   = "www.abk-holding.com";
             $mail->Host       = 'smtpout.secureserver.net';
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username   = 'info@abkholding.com';
+            $mail->Username   = 'info@abk-holding.com';
             $mail->Password   = 'VY@;7TuYE';
             $mail->CharSet = "utf8";
             $mail->Port       = 465;
             
             //Recipients
-            $mail->addAddress("info@abkholding.com", "info@abkholding.com");
+            $mail->addAddress("info@abk-holding.com", "info@abk-holding.com");
 
             // Content
             $mail->isHTML(true);
@@ -45,9 +45,9 @@ if(isset($_POST)){
             $mail->Body    = '<table width="640"><tr><th align="left">Name Surname:</th><td>'. $name .'</td></tr><tr><th align="left">Phone:</th><td>' . $tel . '</td></tr><tr><th align="left">E-mail:</th><td>' . $email . '</td></tr><tr><th align="left">Subject:</th><td>' . $subject . '</td></tr></table>';
 
             if ( $mail->send() ){
-                echo json_encode(["message" => "Mesajınız başarılı bir şekilde gönderildi.", "type"   => "success" ], true);  
+                echo json_encode(["message" => "Your message has been successfully sent.", "type"   => "success" ], true);  
             }else{
-                echo json_encode(["message" => "Mesajınız gönderilirken bir hata oluştu.", "type"   => "danger" ], true);
+                echo json_encode(["message" => "There was an error sending your message.", "type"   => "danger" ], true);
 
             }
         }catch (Exception $e) {
@@ -55,7 +55,7 @@ if(isset($_POST)){
         } 
 
     }else{
-        echo json_encode(["message" => "Lütfen tüm alanları doldurunuz!", "type"   => "danger" ], true);
+        echo json_encode(["message" => "Please fill all the fields!", "type"   => "danger" ], true);
     }
 }
 

@@ -243,6 +243,14 @@ footer{
                     background-image: url($img+"ic-fc.svg");
                     background-size:7px;
                 }
+                &.ln{
+                    background-image: url($img+"ic-in.svg");
+                    background-size:14px;
+                }
+                &.ins{
+                    background-image: url($img+"ic-ins.svg");
+                    background-size:14px;
+                }
                 &.tw{
                     background-image: url($img+"ic-tw.svg");
                     background-size:14px;

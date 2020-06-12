@@ -49,10 +49,9 @@
       <div class="footer-social py-lg-16 py-10 d-flex flex-column align-items-center">
         <img src="../assets/img/ft-abk-logo.svg" alt="" width="130">
         <div class="social-media mt-lg-10 mt-6">
-          <a href="#" class="fc"></a>
-          <a href="#" class="tw"></a>
-          <a href="#" class="yt"></a>
-          <a href="#" class="pt"></a>
+          <a href="https://www.facebook.com/holdingabk" target="_blank" class="fc"></a>
+          <a href="https://www.instagram.com/holdingabk/" target="_blank" class="ins"></a>
+          <a href="https://www.linkedin.com/company/abk-grup/" target="_blank" class="ln"></a>
         </div>
       </div>
       <div class="footer-bottom py-lg-5 py-3 text-center">
