@@ -155,6 +155,7 @@
         img{
           width:42px;
           transition:.5s;
+          margin:0;
           @media screen and(max-width:767px){
             width:32px;
           }

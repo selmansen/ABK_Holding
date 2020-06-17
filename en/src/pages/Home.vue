@@ -4,7 +4,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide" :class="[data.slideId]" v-for="(data,index) in homeSlide" :key="index">
             <div class="container h-100 d-flex align-items-center justify-content-center">
-              <div class="d-flex align-items-center justify-content-center flex-column">
+              <div class="d-flex align-items-center justify-content-center flex-column w-100">
                 <h2 v-html="data.slideTitle" class="w-100"></h2>
                 <router-link :to="data.slideLink" tag="a" class="btn btn-success mt-lg-8 mt-4" v-if="!data.slideLink === false">More Info</router-link>
               </div>
@@ -224,18 +224,28 @@
     }
     .swiper-button-prev, .swiper-button-next{
       color: #a92807;
-      width: 38px;
-      height: 60px;
-      margin-top:-30px;
+      width: 64px;
+      height: 50px;
+      margin-top:-25px;
       &:after{
-        font-size:60px;
+        content: "";
+        border-right: 3px solid #a92807;
+        border-top: 3px solid #a92807;
+        width: 50px;
+        height: 50px;
       }
     }
     .swiper-button-prev{
       left:15px;
+      &:after{
+        transform:rotate(-135deg);
+      }
     }
     .swiper-button-next{
       right:15px;
+      &:after{
+        transform:rotate(45deg);
+      }
     }
   }
   #sectorsSlider{

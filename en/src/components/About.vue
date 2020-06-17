@@ -14,9 +14,10 @@
                   <div class="category mt-12">
                       <div class="category_li">
                           <img src="../assets/img/ic-bankingfinance.svg" alt="">
-                          <p>Banking & Finance</p>
+                          <p>Banking & <br class="d-xl-block d-none">FinTech</p>
                           <div class="logs">
                               <img src="../assets/img/m-abkpayment-logo.svg" alt="">
+                              <img src="../assets/img/m-abktech-logo.svg" alt="" width="80">
                               <img src="../assets/img/m-wamo-logo.svg" alt="">
                           </div>
                       </div>
