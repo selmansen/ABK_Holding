@@ -5,7 +5,7 @@
         <div class="swiper-slide" :class="[data.slideId]" v-for="(data,index) in homeSlide" :key="index">
             <div class="container h-100 d-flex align-items-center justify-content-center">
               <div class="d-flex align-items-center justify-content-center flex-column">
-                <h2 v-html="data.slideTitle"></h2>
+                <h2 v-html="data.slideTitle" class="w-100"></h2>
                 <router-link :to="data.slideLink" tag="a" class="btn btn-success mt-lg-8 mt-4" v-if="!data.slideLink === false">More Info</router-link>
               </div>
             </div>

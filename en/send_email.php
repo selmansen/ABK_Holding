@@ -28,13 +28,13 @@ if(isset($_POST)){
             $mail->isSMTP();
             $mail->From 	  = "info@abkholding.com";
             $mail->FromName   = "www.abkholding.com";
-            $mail->Host       = 'smtpout.secureserver.net';
+            $mail->Host       = 'smtp.office365.com';
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'ssl';
             $mail->Username   = 'info@abkholding.com';
             $mail->Password   = 'VY@;7TuYE';
             $mail->CharSet = "utf8";
-            $mail->Port       = 465;
+            $mail->Port       = 587;
             
             //Recipients
             $mail->addAddress("info@abkholding.com", "info@abkholding.com");

@@ -10,7 +10,7 @@
               <img :src="data.icon" alt="">
               <span :class="data.flag" class="flag"></span>
             </div>
-            <img :src="data.logo" alt="">
+            <a :href="data.link" target="_blank"><img :src="data.logo" alt=""></a>
           </div>
         </div>
         <h2 class="text-center mt-16 mb-11">About Companies</h2>
@@ -53,7 +53,8 @@
           {
             icon:require('../assets/img/ic-ikaros.svg'),
             logo:require('../assets/img/m-ikaros-logo.svg'),
-            flag:"tr"
+            flag:"tr",
+            link:"https://www.ikarosandpartners.com/"
           },
           {
             icon:require('../assets/img/ic-abktech.svg'),
@@ -63,7 +64,8 @@
           {
             icon:require('../assets/img/ic-aa.svg'),
             logo:require('../assets/img/m-aa-logo.svg'),
-            flag:"tr"
+            flag:"tr",
+            link:"https://ata-alp.com/"
           }
         ]
       }

@@ -18,7 +18,7 @@
     <div id="sectorsSlider">
       <marquee-text :duration="25" :repeat="5">
         <div class="item d-flex justify-content-center align-items-center" v-for="(data, index) in sectorsSlide" :key="index">
-            <img :src="data.image" class="img-fluid">
+            <a :href="data.link" target="_blank"><img :src="data.image" class="img-fluid"></a>
         </div>
       </marquee-text>
     </div>
@@ -64,13 +64,15 @@
         ],
         sectorsSlide:[
           {
-            image: require('../assets/img/m-ikaros-logo.svg')
+            image: require('../assets/img/m-ikaros-logo.svg'),
+            link:"https://www.ikarosandpartners.com/"
           },
           {
-            image: require('../assets/img/m-abktech-logo.svg')
+            image: require('../assets/img/m-abktech-logo.svg'),
           },
           {
-            image: require('../assets/img/m-aa-logo.svg')
+            image: require('../assets/img/m-aa-logo.svg'),
+            link:"https://ata-alp.com/"
           }
         ]
       }

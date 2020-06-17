@@ -81,6 +81,7 @@ export default {
     padding:110px 0px 150px;
     p{
         font-size:16px;
+        width:100%;
     }
     .category{
         border-right:1px solid #e5e5e5;
