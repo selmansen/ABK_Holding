@@ -5,7 +5,7 @@
               <div class="col-lg-7">
                   <h2>About Us</h2>
                   <h4 class="mt-4">Strenght that is formed with <br>joined ventures & business partnerships</h4>
-                  <p class="mt-5">ABK was established in 1977 with the name “Ozyavuzgil Group” and changed its business name to ABK Holding A.Ş. in 2017.</p>
+                  <p class="mt-5">ABK was established in 1977 with the name “Ozyavuzgil Holding A.Ş.” and changed its business name to ABK Holding A.Ş. in 2017.</p>
                   <p class="mt-5">ABK is a financial holding gathering its financial operations of CFDs and FX trading, Crypto Exchanges, Banking & FinTech, Insurance Brokerage, and Asset Management operating in different jurisdictions with Technology company to support group companies in terms of IT infrastructure, domain, trading platforms and so on.</p>
                   <p class="mt-5">ABK Group Brokerage Division provides online trading platforms through its licensed entities. With the stream live tradable prices clients can buy or sell at their own discretion, and get the support from multi-lingual staff. ABK services over 10,000 clients across the globe with a global workforce made up of local professionals across the markets in London, Istanbul, and far east Asia with more offices to come.</p>
                   <p class="mt-5">The Group brokerage entities offer a first-class reliable service to its Retail, Professional and Institutional clients, and enabling them to trade on margin over 500 products including Forex, CFDs, Commodities, Equities and Indices through the world prominent trading platforms Metatrader 4 and Metatrader 5 (Metaquotes®)</p>
@@ -17,7 +17,7 @@
                           <p>Banking & <br class="d-xl-block d-none">FinTech</p>
                           <div class="logs">
                               <img src="../assets/img/m-abkpayment-logo.svg" alt="">
-                              <img src="../assets/img/m-abktech-logo.svg" alt="" width="80">
+                              <img src="../assets/img/m-abktech-logo.svg" alt="" width="100">
                               <img src="../assets/img/m-wamo-logo.svg" alt="">
                           </div>
                       </div>
@@ -115,6 +115,7 @@ export default {
             }
             >img{
                 height:30px;
+                transition:.4s;
             }
             p{
                 margin-top:10px;
@@ -145,7 +146,11 @@ export default {
                     opacity: 1;
                 }
             }
-            
+            &:hover{
+                >img{
+                    transform: scale(1.25);
+                }
+            }
         }
     }
 }

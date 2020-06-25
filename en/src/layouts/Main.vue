@@ -31,11 +31,11 @@
                     <div class="ml-md-3 mt-md-0 mt-3">
                       <input class="form-control" type="email" name="email" v-model="form.email" placeholder="E-Mail" required>
                     </div>
-                    <div class="mt-3">
+                    <div class="mt-3 w-100">
                       <input class="form-control" type="tel" name="phone" v-model="form.tel" placeholder="Phone Number" required>
                     </div>
-                    <div class="ml-md-3 mt-3">
-                      <input class="form-control" type="text" name="subject" v-model="form.subject" placeholder="Subject" required>
+                    <div class="mt-3 w-100">
+                      <textarea class="form-control" type="text" name="subject" v-model="form.subject" placeholder="Subject" required />
                     </div>
                   </div>
                   <button class="btn btn-success w-100 mt-3">Send</button>

@@ -5,7 +5,7 @@
               <div class="col-lg-7">
                   <h2>About Us</h2>
                   <h4 class="mt-4">Strenght that is formed with <br>joined ventures & business partnerships</h4>
-                  <p class="mt-5">ABK was established in 1977 with the name “Ozyavuzgil Group” and changed its business name to ABK Holding A.Ş. in 2017.</p>
+                  <p class="mt-5">ABK was established in 1977 with the name “Ozyavuzgil Holding A.Ş." and changed its business name to ABK Holding A.Ş. in 2017.</p>
                   <p class="mt-4">ABK is a holding entity gathering its operations such as FinTech, Insurance Brokerage, HR&Consultancy and Technology companies to support global companies in terms of IT infrastructure, Web management, trading platforms and so on. The Group entities offer a first-class reliable service to its Retail and B2B clients, and enabling them to operate efficiently.</p>
               </div>
               <div class="col-lg-5">
@@ -119,6 +119,7 @@ export default {
             }
             >img{
                 height:30px;
+                transition:.4s;
             }
             p{
                 margin-top:10px;
@@ -158,7 +159,11 @@ export default {
                     opacity: 1;
                 }
             }
-            
+            &:hover{
+                >img{
+                    transform: scale(1.25);
+                }
+            }
         }
     }
 }

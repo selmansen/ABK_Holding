@@ -193,7 +193,7 @@ footer{
         background-size:cover;
         padding:80px 0;
         h2{
-            background-color: rgba(195, 99, 75, .7);
+            background-color:#2a323c;
         }
         .form-wrap{
             background-color: rgba(255, 255, 255, .6);
@@ -207,12 +207,16 @@ footer{
                     }
                 }
                 .btn-success{
-                    background-color: #c3634b;
-                    border-color: #c3634b;
+                    background-color: #2a323c;
+                    border-color: #2a323c;
                     &:hover{
-                        background-color: $claret;
-                        border-color: $claret;
+                        background-color: #20262a;
+                        border-color: #20262a;
                     }
+                }
+                textarea{
+                    resize: none;
+                    height:100px;
                 }
             }
         }
